@@ -1,0 +1,38 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: .5em 1em;
+    @include transition-property(background);
+    @include transition-duration(0.2s);
+
+    &.red {
+        color: white;
+        background: rgba(218,85,79,0.7);
+
+        &:hover {
+            color: white;
+            background: rgba(218,85,79,1);
+        }
+    }
+
+    &.blue {
+        color: white;
+        background: rgba(100,183,194,0.7);
+
+        &:hover {
+            color: white;
+            background: rgba(100,183,194,1);
+        }
+    }
+
+    i {
+        &.right {
+            margin-left: 2px;
+        }
+
+        &.left {
+            margin-right: 2px;
+        }
+    }
+}

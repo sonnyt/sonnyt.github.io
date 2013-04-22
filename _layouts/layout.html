@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% if page.title %} {{ page.title }} | {% endif %} Sonny T.</title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+        <script type="text/javascript">
+            var timerStart = Date.now();
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            {% unless page.no_sidebar %}
+                {% include sidebar.html %}
+            {% endunless %}
+
+            <section class="{% if page.no_sidebar %}sixteen{% else %}twelve{% endif %} columns main">
+                {{ content }}
+            </section>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/jquery.twittie.js"></script>
+        <script type="text/javascript" src="/assets/js/libs/mustache.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
+    </body>
+</html>

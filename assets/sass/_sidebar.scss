@@ -1,0 +1,194 @@
+/* Sidebar */
+section.sidebar {
+    padding: 25px 20px;
+    display: block;
+    position: relative;
+    color: #333;
+    margin-bottom: 30px !important;
+    background: $grayBackground;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #f8f9f9;
+        top: 20px;
+        right: -20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #f8f9f9 transparent transparent transparent;
+            bottom: -20px;
+            right: 20px;
+            top: auto;
+        }
+    }
+
+    // Title
+    h1.title {
+        color: $headerColor;
+        font-size: 1.4em;
+        line-height: 1em;
+        font-weight: 300;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 5px;
+
+        span {
+
+        }
+    }
+
+    // Sidebar modules
+    .module {
+        margin-top: 20px;
+
+        // Social networks
+        &.social {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                width: 23%;
+                text-align: center;
+                @include scale(.5,.5);
+
+                -webkit-animation: scaling 1s forwards;
+                   -moz-animation: scaling 1s forwards;
+                        animation: scaling 1s forwards;
+
+                -webkit-animation-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+
+                &:nth-child(2) {
+                    -webkit-animation-delay: .1s;
+                       -moz-animation-delay: .1s;
+                            animation-delay: .1s;
+                }
+
+                &:nth-child(3) {
+                    -webkit-animation-delay: .2s;
+                       -moz-animation-delay: .2s;
+                            animation-delay: .2s;
+                }
+
+                &:nth-child(4) {
+                    -webkit-animation-delay: .3s;
+                       -moz-animation-delay: .3s;
+                            animation-delay: .3s;
+                }
+
+
+                a {
+                    font-size: 1.2em;
+                    color: #505456;
+                    @include transition-property(color);
+                    @include transition-duration(0.2s);
+
+                    &:hover {
+                        color: #64b7c2;
+                    }
+                }
+            }
+        }
+        
+        // Menu
+        &.menu {
+            list-style: none;
+            border-top: 1px dotted #ccc;
+
+            li {
+                border-bottom: 1px dotted #ccc;
+
+                a {
+                    color: #333;
+                    padding: 8px 0;
+                    display: block;
+
+                    i {
+                        margin-right: 8px;
+                        @include transition-property(margin-right);
+                        @include transition-duration(0.2s);
+                    }
+
+                    &:hover {
+                        i {
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Twitter feed
+        &.twitter {
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            padding: 20px 0 15px;
+            position: relative;
+
+            .button {
+                position: absolute;
+                left: 50%;
+                margin-left: -10px;
+                top: -13px;
+                color: #46bbc4;
+                background: #fff;
+                padding: 5px;
+                @include border-radius(100%);
+            }
+
+            ul {
+                font-size: .9em;
+                list-style: none;
+            }
+        }
+
+        // Stats bar
+        &.stats {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                width: 32%;
+                text-align: center;
+                font-size: 1.2em;
+                border-right: 1px solid #ccc;
+
+                @media only screen and (max-width: 959px) and (min-width: 768px) {
+                    width: 48%;
+                    margin-bottom: 10px;
+
+                    &:nth-child(2) {
+                        border-right: 0px;
+                    }
+                }
+
+                &:last-child {
+                    border-right: 0px;
+                }
+
+                em {
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #444;
+                }
+
+                span {
+                    display: block;
+                    font-size: .7em;
+                    color: #666;
+                }
+            }
+        }
+    }
+}

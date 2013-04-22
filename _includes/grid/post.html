@@ -1,0 +1,16 @@
+<article class="four omega columns post" data-sort="">
+    <div class="info-top">
+        <span class="category">{{ post.category }}</span> <i class="icon-{{ icon }}"></i>
+    </div>
+
+    <h2>{{ post.title }}</h2>
+
+    <div class="content">{{ post.content | strip_html | truncatewords: 50 }}</div>
+
+    <div class="info-bottom clearfix">
+        <span><i class="icon-calendar"></i> {{ post.date | date: "%b. %d, %Y" }}</span>      
+        <span><i class="icon-comments"></i> 2 Comments</span>                  
+    </div>
+
+    <a href="#" class="btn red"><i class="icon-heart left"></i> Share</a> <a href="#" class="btn blue">Read <i class="icon-angle-right right"></i></a>
+</article>
