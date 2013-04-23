@@ -8,8 +8,8 @@
     <div class="content">{{ post.content | strip_html | truncatewords: 50 }}</div>
 
     <div class="info-bottom clearfix">
-        <span><i class="icon-calendar"></i> {{ post.date | date: "%b. %d, %Y" }}</span>      
-        <span><i class="icon-comments"></i> 2 Comments</span>                  
+        <span><i class="icon-calendar"></i> {{ post.date | date: "%b. %d, %Y" }}</span>   
+        <!-- <span><i class="icon-comments"></i> 2 Comments</span> -->
     </div>
 
     <a href="#" class="btn red" title="Share"><i class="icon-heart left"></i> Share</a> <a href="{{ post.url }}" class="btn blue" title="Read">Read <i class="icon-angle-right right"></i></a>

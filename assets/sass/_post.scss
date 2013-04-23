@@ -4,8 +4,33 @@
     article {
         // Title
         h1.title {
-            font-size: 1.6em;
+            font-size: 1.9em;
             font-weight: 300;
+        }
+    }
+
+    aside {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: .8em;
+            text-transform: capitalize;
+            color: #666;
+
+            li {
+                padding: 8px 0;
+                border-top: 1px solid #ccc;
+
+                i {
+                    font-size: 1.1em;
+                    margin-right: 5px;
+                }
+
+                &:first-child {
+                    border-top: 0px;
+                }
+            }
         }
     }
 }

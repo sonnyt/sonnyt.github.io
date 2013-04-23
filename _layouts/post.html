@@ -1,6 +1,18 @@
 ---
 layout: layout
 ---
+{% if page.icon %}
+    {% assign icon = page.icon %}
+{% else %}
+    {% if page.type == 'blog' %}
+        {% assign icon = 'pencil' %}
+    {% endif %}
+
+    {% if page.type == 'themeforest' %}
+        {% assign icon = 'leaf' %}
+    {% endif %}
+{% endif %}
+
 <div class="post">
     <article class="{% if page.no_sidebar %}thirteen{% else %}nine{% endif %} omega columns">
         <h1 class="title">{{ page.title }}</h1>

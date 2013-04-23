@@ -3,7 +3,8 @@ exclude: ["Rakefile", "Gemfile", "config.rb", "README.md", "sass"]
 # General
 title: Sonny T.
 url: http://sonnyt.com
-github_url: http://sonnyt.github.com
+github_url: http://sonnyt.github.io
+permalink: /:categories/:title
 
 # Network usernames
 twitter: sonnyt
