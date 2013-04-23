@@ -1,9 +1,9 @@
-<article class="four omega columns post" data-sort="">
+<article class="four omega columns post">
     <div class="info-top">
         <span class="category">{{ post.category }}</span> <i class="icon-{{ icon }}"></i>
     </div>
 
-    <h2>{{ post.title }}</h2>
+    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 
     <div class="content">{{ post.content | strip_html | truncatewords: 50 }}</div>
 
@@ -12,5 +12,5 @@
         <span><i class="icon-comments"></i> 2 Comments</span>                  
     </div>
 
-    <a href="#" class="btn red"><i class="icon-heart left"></i> Share</a> <a href="#" class="btn blue">Read <i class="icon-angle-right right"></i></a>
+    <a href="#" class="btn red" title="Share"><i class="icon-heart left"></i> Share</a> <a href="{{ post.url }}" class="btn blue" title="Read">Read <i class="icon-angle-right right"></i></a>
 </article>

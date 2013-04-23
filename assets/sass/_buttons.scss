@@ -3,6 +3,7 @@
     display: inline-block;
     text-align: center;
     padding: .5em 1em;
+    font-weight: 400;
     @include transition-property(background);
     @include transition-duration(0.2s);
 

@@ -12,6 +12,7 @@
 @import 'buttons';
 @import 'sidebar';
 @import 'homepage';
+@import 'post';
 
 /* GLOBAL */
 * {
@@ -28,10 +29,11 @@ body {
 }
 
 a, a:visited, a:active {
+    color: #333;
     text-decoration: none;
-    color: #46bbc4;
+    font-weight: 700;
 
     &:hover {
-        color: #b8b8ab;
+        color: #46bbc4;
     }
 }

@@ -1,5 +1,5 @@
 /* Homepage Grid */
-section.main {
+.home {
     padding-top: 1px;
 
     // Grid articles
@@ -39,6 +39,10 @@ section.main {
         h2 {
             font-size: 1.6em;
             font-weight: 300;
+
+            a {
+                font-weight: 300;
+            }
         }
 
         // Content
