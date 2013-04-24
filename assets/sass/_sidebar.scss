@@ -36,16 +36,15 @@ section.sidebar {
 
     // Title
     h1.title {
-        color: $headerColor;
         font-size: 1.4em;
         line-height: 1em;
-        font-weight: 300;
         text-transform: uppercase;
         display: block;
         margin-bottom: 5px;
 
-        span {
-
+        a {
+            color: $headerColor;
+            font-weight: 300;
         }
     }
 

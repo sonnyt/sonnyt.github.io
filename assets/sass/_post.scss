@@ -22,13 +22,17 @@
                 padding: 8px 0;
                 border-top: 1px solid #ccc;
 
+                &:first-child {
+                    border-top: 0px;
+                }
+
                 i {
                     font-size: 1.1em;
                     margin-right: 5px;
                 }
 
-                &:first-child {
-                    border-top: 0px;
+                a {
+                    font-weight: 400;
                 }
             }
         }
