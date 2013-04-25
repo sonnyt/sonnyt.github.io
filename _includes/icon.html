@@ -1,0 +1,11 @@
+{% if post.icon %}
+    {% assign icon = post.icon %}
+{% else %}
+    {% if post.type == 'blog' %}
+        {% assign icon = 'pencil' %}
+    {% endif %}
+
+    {% if post.type == 'themeforest' %}
+        {% assign icon = 'leaf' %}
+    {% endif %}
+{% endif %}
