@@ -22,7 +22,6 @@ $(document).ready(function () {
 
     $('.grid').packery({
         itemSelector: '.item',
-        rowHeight: 279,
         columnWidth: 220,
         gutter: 10
     });
