@@ -3,9 +3,9 @@ layout: layout
 title: Blog
 ---
 <div class="grid blog">
-    {% assign posts = site.categories['blog'] %}
-
-    {% for post in site.posts %}
+    {% assign posts = site.tags[page.tag] %}
+    
+    {% for post in posts %}
         {% include icon.html %}
 
         {% if post.featured %}

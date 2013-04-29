@@ -4,6 +4,9 @@
     text-align: center;
     padding: .5em 1em;
     font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    
     @include transition-property(background);
     @include transition-duration(0.2s);
 

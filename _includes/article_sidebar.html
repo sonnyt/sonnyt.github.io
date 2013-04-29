@@ -1,11 +1,9 @@
 <ul>
     <li><i class="icon-{{ icon }}"></i> {{ page.category }}</li>
     <li><i class="icon-calendar"></i> {{ page.date | date: "%b. %d, %Y" }}</li>
-    {% if page.tags %}
     <li><i class="icon-tags"></i>
         {% for tag in page.tags %}
             <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
         {% endfor %}
     </li>
-    {% endif %}
 </ul>
