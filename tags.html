@@ -1,11 +1,8 @@
 ---
 layout: layout
-title: Blog
 ---
-<div class="grid blog">
-    {% assign posts = site.tags[page.tag] %}
-    
-    {% for post in posts %}
+<div class="home grid">
+    {% for post in site.posts %}
         {% include icon.html %}
 
         {% if post.featured %}
