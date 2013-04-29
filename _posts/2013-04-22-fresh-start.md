@@ -4,6 +4,10 @@ title: "Fresh start"
 date: Apr. 22, 2013
 category: blog
 type: text
-tags: books cooks site new
+tags:
+- books
+- cooks
+- site
+- new
 featured: false
 ---
