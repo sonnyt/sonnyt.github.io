@@ -1,14 +1,8 @@
 ---
 layout: layout
 ---
-<div class="home grid">
+<div class="home">
     {% for post in site.posts %}
-        {% include icon.html %}
-
-        {% if post.featured %}
-            {% include grid/featured.html %}
-        {% else %}
-            {% include grid/post.html %}
-        {% endif %}
+        {% include post.html %}
     {% endfor %}
 </div>

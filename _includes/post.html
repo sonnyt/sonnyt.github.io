@@ -1,0 +1,22 @@
+{% include icon.html %}
+<article class="{{post.id}} {{ post.category }}">
+    <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+    <div class="info">
+        <span><i class="icon-calendar"></i> {{ post.date | date: "%b. %d, %Y" }}</span>
+        <span><i class="icon-{{ icon }}"></i> {{ post.category }}</span>
+        <span><i class="icon-tags"></i>
+            {% for tag in post.tags %}
+                <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
+            {% endfor %}
+        </span>
+    </div>
+    {% if post.summary %}
+        <div class="text summary">
+            {{ post.summary }}
+        </div>
+    {% else %}
+        <div class="text">
+            {{ post.content }}
+        </div>
+    {% endif %}
+</article>

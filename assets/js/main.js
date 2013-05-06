@@ -19,10 +19,4 @@ $(document).ready(function () {
 
         $('#github em').html(count);
     });
-
-    $('.grid').packery({
-        itemSelector: '.item',
-        columnWidth: 220,
-        gutter: 10
-    });
 });

@@ -4,11 +4,20 @@ layout: layout
 {% include icon.html %}
 
 <div class="post">
-    <article class="{% if page.no_sidebar %}thirteen{% else %}nine{% endif %} omega columns">
+    <article>
         <h1 class="title">{{ page.title }}</h1>
+        <div class="info">
+            <span><i class="icon-calendar"></i> {{ page.date | date: "%b. %d, %Y" }}</span>
+            <span><i class="icon-{{ icon }}"></i> {{ page.category }}</span>
+            <span><i class="icon-tags"></i>
+                {% for tag in page.tags %}
+                    <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
+                {% endfor %}
+            </span>
+        </div>
+        
+        <div class="text">
+            {{ content }}
+        </div>
     </article>
-    
-    <aside class="three omega columns">
-        {% include article_sidebar.html %}
-    </aside>
 </div>

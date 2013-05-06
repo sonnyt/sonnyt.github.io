@@ -1,5 +1,7 @@
 /* Sidebar */
 section.sidebar {
+    font-size: 14px;
+    line-height: 1.7;
     padding: 25px 20px;
     display: block;
     position: relative;
@@ -60,6 +62,7 @@ section.sidebar {
                 display: inline-block;
                 width: 23%;
                 text-align: center;
+                opacity: 0;
                 @include scale(.5,.5);
 
                 -webkit-animation: scaling 1s forwards;

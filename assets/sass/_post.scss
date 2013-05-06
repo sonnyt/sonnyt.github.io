@@ -1,40 +1,53 @@
 /* Article Detail */
-.post {
+article {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 
-    article {
-        // Title
-        h1.title {
-            font-size: 1.9em;
+    h3, h1.title {
+        font-size: 2em;
+        color: #555;
+        font-weight: 300;
+
+        a {
             font-weight: 300;
         }
     }
 
-    aside {
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-size: .8em;
-            text-transform: capitalize;
-            color: #666;
+    .info {
+        color: #999;
+        font-weight: 300;
+        text-transform: capitalize;
 
-            li {
-                padding: 8px 0;
-                border-top: 1px solid #ccc;
+        i {
+            margin-right: 8px;
+        }
 
-                &:first-child {
-                    border-top: 0px;
-                }
+        span {
+            margin-right: 20px;
+        }
 
-                i {
-                    font-size: 1.1em;
-                    margin-right: 5px;
-                }
+        a {
+            color: #999;
+            font-weight: 300;
+            margin-right: 5px;
 
-                a {
-                    font-weight: 400;
-                }
+            &:hover {
+                color: #46bbc4;
+            }
+
+            &:after {
+                content: ',';
+            }
+
+            &:last-child:after {
+                content: '.';
             }
         }
     }
+
+    .content {
+
+    }
+
+    border-bottom: 1px dotted #d8d7d7;
 }

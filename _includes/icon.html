@@ -1,4 +1,3 @@
-<!-- Post Icons -->
 {% if post %}
     {% assign item = post %}
 {% else %}
@@ -13,7 +12,7 @@
         {% assign icon = 'pencil' %}
     {% endif %}
 
-    {% if item.type == 'themeforest' %}
+    {% if item.type == 'theme' %}
         {% assign icon = 'leaf' %}
     {% endif %}
 {% endif %}

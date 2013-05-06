@@ -23,9 +23,9 @@ task :new_post, :title do |t, args|
         post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
         post.puts "date: #{Time.now.strftime('%b. %d, %Y')}"
         post.puts "category: #{category}"
-        post.puts "type: #{type}"
         post.puts "featured: #{featured}"
-        post.puts "---" 
+        post.puts "summary: false"
+        post.puts "---"
     end
 end
 
