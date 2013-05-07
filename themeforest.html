@@ -1,13 +1,9 @@
 ---
 layout: layout
-title: Home
+title: Themeforest
 ---
-<div class="home">
+<div class="page about">
     {% for post in site.posts %}
-        {% if post.type == 'text' %}
-            {% include posts/text.html %}
-        {% endif %}
-
         {% if post.type == 'themeforest' %}
             {% include posts/themeforest.html %}
         {% endif %}

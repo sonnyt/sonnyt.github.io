@@ -1,0 +1,9 @@
+---
+layout: layout
+title: Blog
+---
+<div class="page about">
+    {% for post in site.categories.blog %}
+        {% include post.html %}
+    {% endfor %}
+</div>

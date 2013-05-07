@@ -1,0 +1,16 @@
+---
+layout: layout
+title: Works
+permalink: works
+---
+<div class="page works">
+    {% for post in site.categories.themeforest %}
+        {% if post.type contains 'themeforest' %}
+            {% include posts/themeforest.html %}
+        {% endif %}
+
+        {% if post.type contains 'works' %}
+            {% include posts/work.html %}
+        {% endif %}
+    {% endfor %}
+</div>

@@ -24,6 +24,8 @@ task :new_post, :title do |t, args|
         post.puts "date: #{Time.now.strftime('%b. %d, %Y')}"
         post.puts "category: #{category}"
         post.puts "featured: #{featured}"
+        post.puts "type: #{type}"
+        post.puts "image: false"
         post.puts "summary: false"
         post.puts "---"
     end

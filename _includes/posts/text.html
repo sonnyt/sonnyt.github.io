@@ -1,5 +1,8 @@
 {% include icon.html %}
 <article class="{{post.id}} {{ post.category }}">
+    {% if post.image %}
+        <img src="{{ post.image }}" title="{{ post.title }}" />
+    {% endif %}
     <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
     <div class="info">
         <span><i class="icon-calendar"></i> {{ post.date | date: "%b. %d, %Y" }}</span>
