@@ -15,11 +15,22 @@ task :new_post, :title do |t, args|
         abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
     end
 
+    if type == 'theme'
+        demo = get_stdin("Demo URL: ")
+        buy = get_stdin("Buy URL: ")
+
+        layout = 'theme'
+    end
+
+    if type == 'text'
+        layout = 'post'
+    end
+
     puts "Creating new post: #{filename}"
 
     open(filename, 'w') do |post|
         post.puts "---"
-        post.puts "layout: post"
+        post.puts "layout: #{layout}"
         post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
         post.puts "date: #{Time.now.strftime('%b. %d, %Y')}"
         post.puts "category: #{category}"
@@ -27,6 +38,12 @@ task :new_post, :title do |t, args|
         post.puts "type: #{type}"
         post.puts "image: false"
         post.puts "summary: false"
+
+        if type == 'theme'
+            post.puts "demo: #{demo}"
+            post.puts "buy: #{buy}"
+        end
+        
         post.puts "---"
     end
 end
