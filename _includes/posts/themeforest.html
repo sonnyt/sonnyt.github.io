@@ -4,7 +4,10 @@
         <a href="{{ post.url }}" title="{{ post.title }}" class="image">
             <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" style="width: 100%;" />
             <div class="overlay"></div>
-            <i class="icon-chevron-right"></i>
+            <div class="action">
+                <a href="{{ post.url }}"><i class="icon-chevron-right"></i></a>
+                <a href="{{ post.url }}"><i class="icon-eye-open"></i></a>
+            </div>
         </a>
     {% endif %}
     <h3 class="clearfix"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{% if post.price %}<strong>{{ post.price }}</strong>{% endif %}</h3>
