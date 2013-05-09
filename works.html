@@ -4,11 +4,11 @@ title: Works
 ---
 <div class="page works">
     {% for post in site.posts %}
-        {% if post.type contains 'themeforest' %}
+        {% if post.type == 'theme' %}
             {% include posts/themeforest.html %}
         {% endif %}
 
-        {% if post.type contains 'works' %}
+        {% if post.type == 'works' %}
             {% include posts/work.html %}
         {% endif %}
     {% endfor %}

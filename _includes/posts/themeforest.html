@@ -1,7 +1,11 @@
 {% include icon.html %}
 <article class="{{post.id}} {{ post.category }}">
     {% if post.image %}
-        <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" style="width: 100%;" />
+        <a href="{{ post.url }}" title="{{ post.title }}" class="image">
+            <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" style="width: 100%;" />
+            <div class="overlay"></div>
+            <i class="icon-chevron-right"></i>
+        </a>
     {% endif %}
-    <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+    <h3 class="clearfix"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{% if post.price %}<strong>{{ post.price }}</strong>{% endif %}</h3>
 </article>

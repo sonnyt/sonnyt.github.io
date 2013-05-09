@@ -5,7 +5,10 @@ layout: layout
 
 <div class="post">
     <article>
-        <h1 class="title">{{ page.title }}</h1>        
+        {% if page.image %}
+            <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" style="width: 100%;" />
+        {% endif %}
+        <h1 class="title clearfix"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>{% if page.price %}<strong>{{ page.price }}</strong>{% endif %}</h1>
         <div class="text">
             {{ content }}
         </div>

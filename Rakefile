@@ -18,6 +18,7 @@ task :new_post, :title do |t, args|
     if type == 'theme'
         demo = get_stdin("Demo URL: ")
         buy = get_stdin("Buy URL: ")
+        price = get_stdin("Price: ")
 
         layout = 'theme'
     end
@@ -42,6 +43,7 @@ task :new_post, :title do |t, args|
         if type == 'theme'
             post.puts "demo: #{demo}"
             post.puts "buy: #{buy}"
+            post.puts "price: #{price}"
         end
         
         post.puts "---"
