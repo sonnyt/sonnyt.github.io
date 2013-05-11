@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    $(".main article").waypoint(function() {
+        var article = $(this),
+            time = article.index() % 3;
+
+        setTimeout(function() {
+            article.addClass('show')
+        }, time * 100)
+
+    }, {
+        offset: "80%"
+    });
+
     // Initiate twitter
     $('.tweet').twittie({
         username: twitter_username,
