@@ -96,10 +96,6 @@ section.sidebar {
                     color: #505456;
                     @include transition-property(color);
                     @include transition-duration(0.2s);
-
-                    &:hover {
-                        color: #64b7c2;
-                    }
                 }
             }
         }

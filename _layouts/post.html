@@ -9,9 +9,9 @@ layout: layout
         <div class="info">
             <span><i class="icon-calendar"></i> {{ page.date | date: "%b. %d, %Y" }}</span>
             <span><i class="icon-{{ icon }}"></i> {{ page.category }}</span>
-            <span><i class="icon-tags"></i>
+            <span>
                 {% for tag in page.tags %}
-                    <a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
+                    <a href="/tags/{{ tag| slugize }}" class="tag">{{ tag }}</a>
                 {% endfor %}
             </span>
         </div>

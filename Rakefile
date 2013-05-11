@@ -37,9 +37,9 @@ task :new_post, :title do |t, args|
         post.puts "category: #{category}"
         post.puts "featured: #{featured}"
         post.puts "type: #{type}"
+        post.puts "tags: false"
         post.puts "image: false"
         post.puts "summary: false"
-
         if type == 'theme'
             post.puts "demo: #{demo}"
             post.puts "buy: #{buy}"

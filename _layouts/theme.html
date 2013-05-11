@@ -6,9 +6,28 @@ layout: layout
 <div class="post">
     <article>
         {% if page.image %}
-            <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" style="width: 100%;" />
+            <div class="image">
+                <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" style="width: 100%;" />
+            </div>
         {% endif %}
-        <h1 class="title clearfix"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>{% if page.price %}<strong>{{ page.price }}</strong>{% endif %}</h1>
+        <h1 class="title clearfix">{{ page.title }}{% if page.price %}<strong>{{ page.price }}</strong>{% endif %}</h1>
+        <div class="info clearfix">
+            <span>
+                {% for tag in page.tags %}
+                    <a href="/tags/{{ tag| slugize }}" class="tag">{{ tag }}</a>
+                {% endfor %}
+            </span>
+
+            <div class="details">
+                {% for icon in page.icons %}
+                    <i class="icon-{{ icon }}"></i>
+                {% endfor %}
+
+                {% for color in page.colors %}
+                    <i class="icon-circle" style="color: {{ color }};"></i>
+                {% endfor %}
+            </div>
+        </div>
         <div class="text">
             {{ content }}
         </div>

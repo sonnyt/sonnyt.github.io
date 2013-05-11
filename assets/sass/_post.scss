@@ -23,11 +23,11 @@ article {
         line-height: 0;
 
         &:hover {
-            .overlay {
+            a.overlay {
                 opacity: 1;
             }
 
-            .action {
+            a.action {
                 opacity: 1;
                 top: 50%;
             }
@@ -37,25 +37,47 @@ article {
             width: 100%;
         }
 
-        .action {
+        a.action {
+            color: #46bbc4;
             position: absolute;
             top: 100%;
             left: 50%;
             font-size: 2.5em;
             margin-top: -18px;
             opacity: 0;
-            
-            @include transition-property(all);
+
+            @include transition-property(opacity, top);
             @include transition-duration(0.2s);
+
+            &:nth-child(3) {
+                margin-left: -70px;
+
+                @include transition-delay(.1s);
+            }
+
+            &:nth-child(4) {
+                @include transition-delay(.2s);
+            }
+
+            &:nth-child(5) {
+                margin-left: 70px;
+
+                @include transition-delay(.3s);
+            }
+
+            &:hover {
+                color: rgba(218,85,79,1);
+            }
         }
         
-        .overlay {
+        a.overlay {
             position: absolute;
             top: 0;
             width: 100%;
             height: 100%;
             opacity: 0;
             background: rgba(250, 250, 250, .8);
+            display: block;
 
             @include transition-property(opacity);
             @include transition-duration(0.2s);
@@ -83,13 +105,31 @@ article {
             &:hover {
                 color: #46bbc4;
             }
+        }
 
-            &:after {
-                content: ',';
+        .tag {
+            background: #eee;
+            padding: 3px 10px;
+            font-size: .85em;
+
+            @include border-radius(5px);
+            @include transition-property(opacity);
+            @include transition-duration(0.2s);
+
+            &:hover {
+                color: #999;
+                opacity: .7;
             }
+        }
 
-            &:last-child:after {
-                content: '.';
+        .details {
+            float: right;
+            font-size: 1.1em;
+            line-height: 1.7em;
+
+            i {
+                margin-right: 0;
+                margin-left: 5px;
             }
         }
     }

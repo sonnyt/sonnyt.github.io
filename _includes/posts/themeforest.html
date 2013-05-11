@@ -1,14 +1,30 @@
 {% include icon.html %}
 <article class="{{post.id}} {{ post.category }}">
     {% if post.image %}
-        <a href="{{ post.url }}" title="{{ post.title }}" class="image">
+        <div class="image">
             <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" style="width: 100%;" />
-            <div class="overlay"></div>
-            <div class="action">
-                <a href="{{ post.url }}"><i class="icon-chevron-right"></i></a>
-                <a href="{{ post.url }}"><i class="icon-eye-open"></i></a>
-            </div>
-        </a>
+            <a href="{{ post.url }}" title="{{ post.title }}" class="overlay"></a>
+            <a href="{{ post.demo }}" target="_blank" title="Preview {{ post.title }}" class="action icon-eye-open"></a>
+            <a href="{{ post.buy }}" target="_blank" title="Buy {{ post.title }}" class="action icon-shopping-cart"></a>
+            <a href="{{ post.url }}" title="More on {{ post.title }}" class="action icon-chevron-right"></a>
+        </div>
     {% endif %}
     <h3 class="clearfix"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{% if post.price %}<strong>{{ post.price }}</strong>{% endif %}</h3>
+    <div class="info">
+        <span>
+            {% for tag in post.tags %}
+                <a href="/tags/{{ tag| slugize }}" class="tag">{{ tag }}</a>
+            {% endfor %}
+        </span>
+
+        <div class="details">
+            {% for icon in post.icons %}
+                <i class="icon-{{ icon }}"></i>
+            {% endfor %}
+
+            {% for color in post.colors %}
+                <i class="icon-circle" style="color: {{ color }}"></i>
+            {% endfor %}
+        </div>
+    </div>
 </article>
