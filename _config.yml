@@ -5,7 +5,7 @@ title: Sonny T.
 description: New York based web junkie. Currently lead developer at StyleCaster Media Group.
 url: http://sonnyt.com
 github_url: http://sonnyt.github.io
-permalink: /:title
+permalink: /:categories/:title
 
 # Network usernames
 twitter: sonnyt
