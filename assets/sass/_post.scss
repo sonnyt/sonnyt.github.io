@@ -145,9 +145,13 @@ article {
         }
     }
 
+    .buttons {
+        margin-top: 10px;
+    }
+
     .text {
         .icons {
-            background: #f8f9f9;
+            background: $gray;
             padding: 30px 0;
             text-align: center;
             font-size: 5em;
@@ -167,7 +171,7 @@ article {
                 height: 0;
                 border-width: 10px;
                 border-style: solid;
-                border-color: #f8f9f9 transparent transparent transparent;
+                border-color: $gray transparent transparent transparent;
                 bottom: -20px;
                 left: 50%;
                 margin-left: -5px;
@@ -182,7 +186,7 @@ article {
                 i {
                     font-size: 2.5em;
                     margin-bottom: 10px;
-                    color: rgba(100,183,194,1);
+                    color: $prime;
                 }
 
                 strong {

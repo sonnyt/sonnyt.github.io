@@ -7,7 +7,7 @@ section.sidebar {
     position: relative;
     color: #333;
     margin-bottom: 30px !important;
-    background: $grayBackground;
+    background: $gray;
 
     &:after {
         content: "";
@@ -16,7 +16,7 @@ section.sidebar {
         height: 0;
         border-width: 10px;
         border-style: solid;
-        border-color: transparent transparent transparent #f8f9f9;
+        border-color: transparent transparent transparent $gray;
         top: 20px;
         right: -20px;
     }
@@ -29,7 +29,7 @@ section.sidebar {
             height: 0;
             border-width: 10px;
             border-style: solid;
-            border-color: #f8f9f9 transparent transparent transparent;
+            border-color: $gray transparent transparent transparent;
             bottom: -20px;
             right: 20px;
             top: auto;
@@ -45,7 +45,7 @@ section.sidebar {
         margin-bottom: 5px;
 
         a {
-            color: $headerColor;
+            color: $prime;
             font-weight: 300;
         }
     }
@@ -98,7 +98,7 @@ section.sidebar {
                     @include transition-duration(0.2s);
 
                     &:hover {
-                        color: #64b7c2;
+                        color: $prime;
                     }
                 }
             }
