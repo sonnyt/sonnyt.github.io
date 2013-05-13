@@ -145,8 +145,60 @@ article {
         }
     }
 
-    .content {
+    .text {
+        .icons {
+            background: #f8f9f9;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 5em;
+            line-height: 0;
+            color: #666;
+            margin: 20px 0;
+            position: relative;
 
+            i {
+                margin: 0 15px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-width: 10px;
+                border-style: solid;
+                border-color: #f8f9f9 transparent transparent transparent;
+                bottom: -20px;
+                left: 50%;
+                margin-left: -5px;
+            }
+        }
+
+        .features {
+            li {
+                margin-top: 25px;
+                text-align: center;
+
+                i {
+                    font-size: 2.5em;
+                    margin-bottom: 10px;
+                    color: rgba(100,183,194,1);
+                }
+
+                strong {
+                    display: block;
+                }
+            }
+        }
+
+        .images {
+            padding: 10px 0;
+            margin: 20px 0;
+
+            img {
+                border: 2px solid #eee;
+            }
+        }
     }
 
     border-bottom: 1px dotted #d8d7d7;

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Waypoint
     $(".main article").waypoint(function() {
         var article = $(this),
             time = article.index() % 3;

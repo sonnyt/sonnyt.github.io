@@ -9,7 +9,7 @@ task :new_post, :title do |t, args|
     featured = get_stdin("Is this post featured? true/false ")
 
     mkdir_p "_posts"
-    filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
+    filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.html"
 
     if File.exist?(filename)
         abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'

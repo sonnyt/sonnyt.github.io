@@ -9,7 +9,7 @@
         <span><i class="icon-{{ icon }}"></i> {{ post.category }}</span>
         <span>
             {% for tag in post.tags %}
-                <a href="/tags/{{ tag| slugize }}" class="tag">{{ tag }}</a>
+                <a href="/tags/{{ tag| slugize }}" class="tag" title="{{ tag }}">{{ tag }}</a>
             {% endfor %}
         </span>
     </div>
