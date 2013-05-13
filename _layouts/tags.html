@@ -1,18 +1,14 @@
 ---
 layout: layout
 ---
-<div class="home grid">
+<div class="tags grid">
     {% for post in site.posts %}
-        {%for tag in post.tags %}
-            {% if tag == page.tag %}
-                {% include icon.html %}
+        {% if post.type == 'text' %}
+            {% include posts/text.html %}
+        {% endif %}
 
-                {% if post.featured %}
-                    {% include grid/featured.html %}
-                {% else %}
-                    {% include grid/post.html %}
-                {% endif %} 
-            {% endif %}
-        {% endfor %}
+        {% if post.type == 'theme' %}
+            {% include posts/themeforest.html %}
+        {% endif %}
     {% endfor %}
 </div>
