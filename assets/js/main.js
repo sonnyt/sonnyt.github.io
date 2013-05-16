@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Waypoint
-    $(".main article").waypoint(function() {
+    $('.main article').waypoint(function() {
         var article = $(this),
             time = article.index() % 3;
 
@@ -9,7 +9,7 @@ $(document).ready(function () {
         }, time * 100)
 
     }, {
-        offset: "80%"
+        offset: '90%'
     });
 
     // Initiate twitter
