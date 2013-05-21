@@ -2,7 +2,7 @@
 <article class="{{post.id}} {{ post.category }}">
     {% if post.image %}
         <div class="image">
-            <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" style="width: 100%;" />
+            <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}" style="width: 100%;" />
             <a href="{{ post.url }}" title="{{ post.title }}" class="overlay"></a>
             <a href="{{ post.demo }}" target="_blank" title="Preview {{ post.title }}" class="action icon-eye-open"></a>
             <a href="{{ post.buy }}" target="_blank" title="Buy {{ post.title }}" class="action icon-shopping-cart"></a>
