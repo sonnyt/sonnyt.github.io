@@ -33,3 +33,5 @@ $(document).ready(function () {
         $('#github em').html(count);
     });
 });
+
+console.log('No need to snoop around, the source code is available at https://github.com/sonnyt/sonnyt.github.io ;)');
