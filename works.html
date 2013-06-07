@@ -11,5 +11,9 @@ title: Works
         {% if post.type == 'works' %}
             {% include posts/work.html %}
         {% endif %}
+
+        {% if post.type == 'resource' %}
+            {% include posts/resources.html %}
+        {% endif %}
     {% endfor %}
 </div>
