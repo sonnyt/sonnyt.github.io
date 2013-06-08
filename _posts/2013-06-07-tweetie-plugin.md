@@ -11,7 +11,7 @@ tags:
 - twitter
 image: tweetie.jpg
 summary: false
-demo: https://sonnyt.com/Tweetie
+demo: http://sonnyt.com/Tweetie
 github: https://github.com/sonnyt/Tweetie
 download: https://github.com/sonnyt/Tweetie/tags
 ---
