@@ -8,9 +8,8 @@
                 <a href="{{ post.demo }}" target="_blank" title="Preview {{ post.title }}" class="action icon-eye-open"></a>
             {% endif %}
             {% if post.github %}
-                <a href="{{ post.github }}" target="_blank" title="Github {{ post.github }}" class="action icon-github"></a>
+                <a href="{{ post.github }}" target="_blank" title="Github {{ post.title }}" class="action icon-github"></a>
             {% endif %}
-            <a href="{{ post.download }}" target="_blank" title="Download {{ post.title }}" class="action icon-download-alt"></a>
             <a href="{{ post.url }}" title="More on {{ post.title }}" class="action icon-chevron-right"></a>
         </div>
     {% endif %}

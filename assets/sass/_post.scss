@@ -203,6 +203,24 @@ article {
                 border: 2px solid #eee;
             }
         }
+
+        h1 {
+            font-size: 1.8em;
+            color: #555;
+            font-weight: 300;
+            margin: 5px 0 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+            font-weight: 300;
+            margin: 5px 0 10px;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
     }
 
     border-bottom: 1px dotted #d8d7d7;
