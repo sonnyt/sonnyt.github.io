@@ -62,8 +62,6 @@ section.sidebar {
                 display: inline-block;
                 width: 23%;
                 text-align: center;
-                opacity: 0;
-                @include scale(.5,.5);
 
                 -webkit-animation: scaling 1s forwards;
                    -moz-animation: scaling 1s forwards;
@@ -147,7 +145,6 @@ section.sidebar {
                 color: rgba(45,187,241,0.8);
                 background: #fff;
                 padding: 5px;
-                @include scale(.5,.5);
                 @include border-radius(100%);
 
                 -webkit-animation: scaling 1s forwards;
