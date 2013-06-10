@@ -9,14 +9,15 @@ $(document).ready(function () {
         }, time * 100)
 
     }, {
-        offset: '90%'
+        offset: '110%'
     });
 
     // Initiate twitter
     $('.tweet').twittie({
         username: twitter_username,
         count: 1,
-        hideReplies: true
+        hideReplies: true,
+        template: '{{tweet}}'
     });
 
     // Get Themeforest count
