@@ -10,7 +10,7 @@ tags:
 - github
 image: false
 summary: false
-
+description: "Jekyll site built using Compass/Sass and jQuery hosted in Github Pages."
 ---
 
 Finally, I got over my bad habit of procrastinating and updated my site. It's been forever since I touched it; mainly because I've been super busy working on different projects.

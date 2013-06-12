@@ -40,6 +40,7 @@ task :new_post, :title do |t, args|
         post.puts "tags: false"
         post.puts "image: false"
         post.puts "summary: false"
+        post.puts "description: false"
         if type == 'theme'
             post.puts "demo: #{demo}"
             post.puts "buy: #{buy}"

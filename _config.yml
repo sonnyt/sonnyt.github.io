@@ -6,6 +6,7 @@ description: New York based web junkie. Currently lead developer at StyleCaster 
 url: http://sonnyt.com
 github_url: http://sonnyt.github.io
 permalink: /:title
+pygments: true
 
 # Network usernames
 twitter: sonnyt
