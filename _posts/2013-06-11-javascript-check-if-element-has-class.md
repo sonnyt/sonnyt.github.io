@@ -15,8 +15,8 @@ description: "Check wether element contains a class, without using jQuery."
 Here is a little snippet If you're trying to check wether element contains a class, without using jQuery.
 
 {% highlight javascript %}
-function hasClass(element, class) {
-    return element.className && new RegExp("(^|\\s)" + class + "(\\s|$)").test(element.className);
+function hasClass(element, className) {
+    return element.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(element.className);
 }
 {% endhighlight %}
 
