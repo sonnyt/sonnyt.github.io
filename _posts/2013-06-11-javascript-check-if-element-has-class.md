@@ -22,7 +22,7 @@ function hasClass(element, className) {
 
 This accounts for the fact that element might contain multiple class names separated by space.
 
-You can also assign this function to an object prototype.
+You can also assign this function to element prototype.
 
 {% highlight javascript %}
 Element.prototype.hasClass = function(className) {
