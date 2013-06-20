@@ -14,7 +14,6 @@ $(document).ready(function () {
 
     // Initiate twitter
     $('.tweet').twittie({
-        username: twitter_username,
         count: 1,
         hideReplies: true,
         template: '{{tweet}}'
