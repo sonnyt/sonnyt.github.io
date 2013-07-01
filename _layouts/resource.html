@@ -20,14 +20,14 @@ layout: layout
         </div>
         <p class="buttons clearfix offset-by-two">
             {% if page.demo %}
-                <a href="{{ page.demo }}" class="btn blue columns alpha three" target="_blank" title="Preview {{ page.title }}"><i class="icon-eye-open left"></i> Demo</a>
+                <a href="{{ page.demo }}" class="btn blue columns alpha three icon-eye-open" target="_blank" title="Preview {{ page.title }}"><span>Demo</span></a>
             {% endif %}
 
             {% if page.github %}
-                <a href="{{ page.github }}" class="btn blue columns alpha three" target="_blank" title="Preview {{ page.title }}"><i class="icon-github left"></i> GitHub</a>
+                <a href="{{ page.github }}" class="btn blue columns alpha three icon-github" target="_blank" title="Preview {{ page.title }}"><span>GitHub</span></a>
             {% endif %}
             
-            <a href="{{ page.download }}" class="btn red columns alpha three" target="_blank" title="Download {{ page.title }}"><i class="icon-download-alt left"></i> Download</a>
+            <a href="{{ page.download }}" class="btn red columns alpha three icon-download-alt" target="_blank" title="Download {{ page.title }}"><span>Download</span></a>
         </p>
         <div class="text">
             {{ content }}
