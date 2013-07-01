@@ -2,7 +2,7 @@
 .btn {
     display: inline-block;
     text-align: center;
-    padding: 1em;
+    padding: .8em 1em;
     font-weight: 400;
     position: relative;
     cursor: pointer;
@@ -30,7 +30,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        line-height: 1.6em;
+        line-height: 1.35em;
         font-size: 2em;
 
         @include transition(all 0.3s);
