@@ -1,5 +1,7 @@
 exclude: ["Rakefile", "Gemfile", "config.rb", "README.md", "sass"]
 
+pygments: true
+
 # General
 title: Sonny T.
 description: New York based web junkie. Currently lead developer at StyleCaster Media Group.
