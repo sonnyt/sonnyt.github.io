@@ -16,9 +16,7 @@ description: "Order Wordpress WP_Query posts by array list post IDs."
 Recently, I had to build a Wordpress Admin widget area which enables a user to select, change order and save a list of posts. Selected post IDs are stored in an `array()` which can be found in the options table. It looks something like this:
 
 {% highlight php %}
-<?php
     $post_list = array(123, 456, 321);
-?>
 {% endhighlight %}
 
 So when it comes to rending the posts in the array, I just create a new `WP_Query()`, like so:
