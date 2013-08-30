@@ -17,7 +17,7 @@ Recently, I had to build a Wordpress Admin widget area which enables a user to s
 
 {% highlight php %}
 <?php
-    $post_list = array(123, 456, 321);
+    $post_list = array( 123, 456, 321 );
 ?>
 {% endhighlight %}
 
@@ -25,9 +25,9 @@ So when it comes to rending the posts in the array, I just create a new `WP_Quer
 
 {% highlight php %}
 <?php
-    $post_list = array(123, 456, 321);
+    $post_list = array( 123, 456, 321 );
     
-    $args = array('post__in' => $post_list);
+    $args = array( 'post__in' => $post_list );
     
     $my_query = new WP_Query( $args );
 ?>
@@ -37,13 +37,13 @@ Wordpress automatically queries posts in a reverse chronological order (newest p
 
 {% highlight php %}
 <?php
-    $post_list = array(123, 456, 321);
+    $post_list = array( 123, 456, 321 );
 
-    $args = array('post__in' => $post_list);
+    $args = array( 'post__in' => $post_list );
 
     $my_query = new WP_Query( $args );
 
-    usort($widget_query->posts, function ($a, $b) use ($post_list)
+    usort( $widget_query->posts, function ( $a, $b ) use ( $post_list )
     {
         $apos   = array_search( $a->ID, $post_list );
         $bpos   = array_search( $b->ID, $post_list );
