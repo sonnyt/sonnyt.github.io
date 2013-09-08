@@ -3,8 +3,11 @@ layout: layout
 ---
 <div class="tags grid">
     {% for post in site.posts %}
+
         {% for tag in post.tags %}
+
             {% if tag == page.tag %}
+
                 {% if post.type == 'text' %}
                     {% include posts/text.html %}
                 {% endif %}
@@ -12,7 +15,14 @@ layout: layout
                 {% if post.type == 'theme' %}
                     {% include posts/themeforest.html %}
                 {% endif %}
+
+                {% if post.type == 'resource' %}
+                    {% include posts/resources.html %}
+                {% endif %}
+
             {% endif %}
+
         {% endfor %}
+        
     {% endfor %}
 </div>
