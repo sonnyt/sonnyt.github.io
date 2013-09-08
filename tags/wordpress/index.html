@@ -39,9 +39,7 @@
     <!-- Menu -->
     <ul class="menu module">
         <li><a href="/blog" title="Blog"><i class="icon-pencil"></i>Blog</a></li>
-        <!-- <li><a href="/works" title="Works"><i class="icon-briefcase"></i>Works</a></li> -->
-        <li><a href="/works" title="Works"><i class="icon-leaf"></i>Works</a></li>
-        <!-- <li><a href="freebies" title="Freebies"><i class="icon-gift"></i>Freebies</a></li> -->
+        <li><a href="/work" title="Work"><i class="icon-leaf"></i>Work</a></li>
     </ul>
     <!-- /Menu -->
     
@@ -65,17 +63,22 @@
         </li>
     </ul>
     <!-- /Stats -->
-    <a href="http://github.com/sonnyt/sonnyt.github.io" target="_blank" class="btn red module icon-github-alt" style="display: block;"><span>Fork It</span></a>
+    <a href="http://github.com/sonnyt/sonnyt.github.io" target="_blank" class="btn red module icon-github-alt" style="display: block;"><span>Fork Me</span></a>
 </section>
             
 
             <section class="twelve columns main">
                 <div class="tags grid">
     
+
         
+
             
+
         
+
             
+
                 
                     
     
@@ -110,16 +113,16 @@
             Recently, I had to build a Wordpress Admin widget area which enables a user to select, change order and save a list of posts. Selected post IDs are stored in an `array()` which can be found in the options table. It looks something like this:
 
 <div class="highlight"><pre><code class="php"><span class="cp">&lt;?php</span>
-    <span class="nv">$post_list</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">321</span><span class="p">);</span>
+    <span class="nv">$post_list</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">321</span> <span class="p">);</span>
 <span class="cp">?&gt;</span><span class="x"></span>
 </code></pre></div>
 
 So when it comes to rending the posts in the array, I just create a new `WP_Query()`, like so:
 
 <div class="highlight"><pre><code class="php"><span class="cp">&lt;?php</span>
-    <span class="nv">$post_list</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">321</span><span class="p">);</span>
+    <span class="nv">$post_list</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">321</span> <span class="p">);</span>
     
-    <span class="nv">$args</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;post__in&#39;</span> <span class="o">=&gt;</span> <span class="nv">$post_list</span><span class="p">);</span>
+    <span class="nv">$args</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;post__in&#39;</span> <span class="o">=&gt;</span> <span class="nv">$post_list</span> <span class="p">);</span>
     
     <span class="nv">$my_query</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WP_Query</span><span class="p">(</span> <span class="nv">$args</span> <span class="p">);</span>
 <span class="cp">?&gt;</span><span class="x"></span>
@@ -128,13 +131,13 @@ So when it comes to rending the posts in the array, I just create a new `WP_Quer
 Wordpress automatically queries posts in a reverse chronological order (newest post first), or if set - by `orderby` value. However, what if I need to keep the queried posts in specific order listed in my `$post_list` array? This sort of condtion cannot be passed into `WP_Query()` as an argument, but it can be done after query is completed. After some messing around by creating loops and filtering the object, the best solution was to use the [usort()](http://php.net/manual/en/function.usort.php "usort - function") PHP function.
 
 <div class="highlight"><pre><code class="php"><span class="cp">&lt;?php</span>
-    <span class="nv">$post_list</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">321</span><span class="p">);</span>
+    <span class="nv">$post_list</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">321</span> <span class="p">);</span>
 
-    <span class="nv">$args</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;post__in&#39;</span> <span class="o">=&gt;</span> <span class="nv">$post_list</span><span class="p">);</span>
+    <span class="nv">$args</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;post__in&#39;</span> <span class="o">=&gt;</span> <span class="nv">$post_list</span> <span class="p">);</span>
 
     <span class="nv">$my_query</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WP_Query</span><span class="p">(</span> <span class="nv">$args</span> <span class="p">);</span>
 
-    <span class="nb">usort</span><span class="p">(</span><span class="nv">$widget_query</span><span class="o">-&gt;</span><span class="na">posts</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span><span class="p">)</span> <span class="k">use</span> <span class="p">(</span><span class="nv">$post_list</span><span class="p">)</span>
+    <span class="nb">usort</span><span class="p">(</span> <span class="nv">$widget_query</span><span class="o">-&gt;</span><span class="na">posts</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span> <span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">use</span> <span class="p">(</span> <span class="nv">$post_list</span> <span class="p">)</span>
     <span class="p">{</span>
         <span class="nv">$apos</span>   <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span> <span class="nv">$a</span><span class="o">-&gt;</span><span class="na">ID</span><span class="p">,</span> <span class="nv">$post_list</span> <span class="p">);</span>
         <span class="nv">$bpos</span>   <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span> <span class="nv">$b</span><span class="o">-&gt;</span><span class="na">ID</span><span class="p">,</span> <span class="nv">$post_list</span> <span class="p">);</span>
@@ -145,67 +148,127 @@ Wordpress automatically queries posts in a reverse chronological order (newest p
 </code></pre></div>
 
 And that's it.
+
         </div>
     
 </article>
                 
 
                 
+
+                
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
         
+
             
+
+        
         
     
+
         
+
             
+
         
+
             
+
         
+
             
+
+        
         
     
 </div>
@@ -215,18 +278,19 @@ And that's it.
         <!-- Google Analytics -->
         <script type="text/javascript">
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-21599784-2']);
-          _gaq.push(['_trackPageview']);
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-21599784-2']);
+            _gaq.push(['_setDomainName', 'sonnyt.com']);
+            _gaq.push(['_trackPageview']);
 
-          (function() {
+            (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+            })();
 
         </script>
-
+        
         <!-- SCRIPTS -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/libs/twittie.min.js"></script>
