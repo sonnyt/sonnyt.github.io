@@ -39,6 +39,7 @@ First, you need a consumer key and secret keys. Get one from [dev.twitter.com/ap
 Edit `api/config.php` file and replace variables with your Consumer and oAuth Keys.
 
 {% highlight php %}
+<?php
     // Consumer Key
     define('CONSUMER_KEY', 'CONSUMER_KEY_HERE');
     define('CONSUMER_SECRET', 'CONSUMER_SECRET_HERE');
@@ -46,6 +47,7 @@ Edit `api/config.php` file and replace variables with your Consumer and oAuth Ke
     // User Access Token
     define('ACCESS_TOKEN', 'ACCESS_TOKEN_HERE');
     define('ACCESS_SECRET', 'ACCESS_SECRET_HERE');
+?>
 {% endhighlight %}
 
 ## Step 3
