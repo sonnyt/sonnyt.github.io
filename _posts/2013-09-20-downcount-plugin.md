@@ -9,7 +9,7 @@ tags:
 - freebie
 - resources
 - countdown
-image: downcount.jpg
+image: downCount.jpg
 summary: false
 description: "jQuery downCount - TimeZone Sensative Countdown Plugin"
 demo: http://sonnyt.com/downCount
