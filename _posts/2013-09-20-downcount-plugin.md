@@ -1,6 +1,6 @@
 ---
 layout: resource
-title: "jQuery downCount - TimeZone Sensative Countdown Plugin"
+title: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
 date: Sep. 20, 2013
 category: resources
 featured: false
@@ -11,7 +11,7 @@ tags:
 - countdown
 image: downCount.jpg
 summary: false
-description: "jQuery downCount - TimeZone Sensative Countdown Plugin"
+description: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
 demo: http://sonnyt.com/downCount
 github: https://github.com/sonnyt/downCount
 download: https://github.com/sonnyt/downCount/tags
