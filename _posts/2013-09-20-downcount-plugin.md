@@ -29,12 +29,12 @@ jQuery countdown plugin that accounts for timezone. Plugin requires you to set y
 Initlize just like any other plugin.
 
 {% highlight javascript %}
-	$('.countdown').downCount({
-	    date: '08/27/2013 12:00:00',
-	    offset: -5
-	}, function () {
-	    alert('WOOT WOOT, done!');
-	});
+$('.countdown').downCount({
+    date: '08/27/2013 12:00:00',
+    offset: -5
+}, function () {
+    alert('WOOT WOOT, done!');
+});
 {% endhighlight %}
 
 [Read more on GitHub...](https://github.com/sonnyt/downCount)
