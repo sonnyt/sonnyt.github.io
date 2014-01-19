@@ -43,7 +43,7 @@ Wordpress automatically queries posts in a reverse chronological order (newest p
 
     $my_query = new WP_Query( $args );
 
-    usort( $widget_query->posts, function ( $a, $b ) use ( $post_list )
+    usort( $my_query->posts, function ( $a, $b ) use ( $post_list )
     {
         $apos   = array_search( $a->ID, $post_list );
         $bpos   = array_search( $b->ID, $post_list );
