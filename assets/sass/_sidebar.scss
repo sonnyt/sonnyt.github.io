@@ -89,6 +89,12 @@ section.sidebar {
                             animation-delay: .3s;
                 }
 
+                &:nth-child(4) {
+                    -webkit-animation-delay: .4s;
+                       -moz-animation-delay: .4s;
+                            animation-delay: .4s;
+                }
+
                 a {
                     font-size: 1.2em;
                     color: #505456;
