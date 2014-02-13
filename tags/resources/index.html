@@ -31,6 +31,7 @@
     <ul class="social module">
         <li><a href="http://twitter.com/sonnyt" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
         <li><a href="http://www.linkedin.com/pub/sonny-tulyaganov/18/964/910" title="Linkedin" target="_blank"><i class="icon-linkedin"></i></a></li>
+        <li><a href="http://themeforest.net/user/sonnyt" title="Themeforest" target="_blank"><i class="icon-leaf"></i></a></li>
         <li><a href="http://github.com/sonnyt" title="GitHub" target="_blank"><i class="icon-github"></i></a></li>
         <li><a href="mailto:hi@sonnyt.com" title="Email" target="_blank"><i class="icon-envelope-alt"></i></a></li>
     </ul>
@@ -59,16 +60,123 @@
             <em>0</em> <span>Themes</span>
         </li>
         <li>
-            <em>8</em> <span>Posts</span>
+            <em>11</em> <span>Posts</span>
         </li>
     </ul>
     <!-- /Stats -->
-    <a href="http://github.com/sonnyt/sonnyt.github.io" target="_blank" class="btn red module icon-github-alt" style="display: block;"><span>Fork Me</span></a>
+    <a href="http://github.com/sonnyt/sonnyt.github.io" target="_blank" class="btn red module icon-github-alt" style="display: block;"><span>Fork</span></a>
 </section>
+
             
 
             <section class="twelve columns main">
                 <div class="tags grid">
+    
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+        
+    
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+        
+    
+
+        
+
+            
+
+        
+
+            
+
+                
+
+                
+
+                
+                    
+    
+
+
+
+
+    
+
+    
+
+<article class="/downcount-plugin resources">
+    
+        <div class="image">
+            <img src="/assets/imgs/downCount.jpg" title="jQuery downCount - TimeZone Sensitive Countdown Plugin" alt="jQuery downCount - TimeZone Sensitive Countdown Plugin" style="width: 100%;" />
+            <a href="/downcount-plugin" title="jQuery downCount - TimeZone Sensitive Countdown Plugin" class="overlay"></a>
+            
+                <a href="http://sonnyt.com/downCount" target="_blank" title="Preview jQuery downCount - TimeZone Sensitive Countdown Plugin" class="action icon-eye-open"></a>
+            
+            
+                <a href="https://github.com/sonnyt/downCount" target="_blank" title="Github jQuery downCount - TimeZone Sensitive Countdown Plugin" class="action icon-github"></a>
+            
+            <a href="/downcount-plugin" title="More on jQuery downCount - TimeZone Sensitive Countdown Plugin" class="action icon-chevron-right"></a>
+        </div>
+    
+    <h3 class="clearfix"><a href="/downcount-plugin" title="jQuery downCount - TimeZone Sensitive Countdown Plugin">jQuery downCount - TimeZone Sensitive Countdown Plugin</a></h3>
+    <div class="info">
+        <span>
+            
+                <a href="/tags/freebie" title="freebie" class="tag">freebie</a>
+            
+                <a href="/tags/resources" title="resources" class="tag">resources</a>
+            
+                <a href="/tags/countdown" title="countdown" class="tag">countdown</a>
+            
+        </span>
+    </div>
+</article>
+                
+
+            
+
+        
+
+            
+
+        
+        
     
 
         
@@ -141,7 +249,7 @@ Wordpress automatically queries posts in a reverse chronological order (newest p
 
     <span class="nv">$my_query</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WP_Query</span><span class="p">(</span> <span class="nv">$args</span> <span class="p">);</span>
 
-    <span class="nb">usort</span><span class="p">(</span> <span class="nv">$widget_query</span><span class="o">-&gt;</span><span class="na">posts</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span> <span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">use</span> <span class="p">(</span> <span class="nv">$post_list</span> <span class="p">)</span>
+    <span class="nb">usort</span><span class="p">(</span> <span class="nv">$my_query</span><span class="o">-&gt;</span><span class="na">posts</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span> <span class="nv">$a</span><span class="p">,</span> <span class="nv">$b</span> <span class="p">)</span> <span class="k">use</span> <span class="p">(</span> <span class="nv">$post_list</span> <span class="p">)</span>
     <span class="p">{</span>
         <span class="nv">$apos</span>   <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span> <span class="nv">$a</span><span class="o">-&gt;</span><span class="na">ID</span><span class="p">,</span> <span class="nv">$post_list</span> <span class="p">);</span>
         <span class="nv">$bpos</span>   <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span> <span class="nv">$b</span><span class="o">-&gt;</span><span class="na">ID</span><span class="p">,</span> <span class="nv">$post_list</span> <span class="p">);</span>
