@@ -15,24 +15,27 @@
         {% endif; %}
         <meta name="HandheldFriendly" content="true" />
         <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-        <script type="text/javascript">
-            // Usernames
-            var twitter_username = '{{ site.twitter }}',
-                github_username = '{{ site.github_user }}',
-                themeforest_username = '{{ site.themeforest }}';
-        </script>
     </head>
     <body>
         <div class="container">
-            {% unless page.no_sidebar %}
-                {% include sidebar.html %}
-            {% endunless %}
-
-            <section class="{% if page.no_sidebar %}sixteen{% else %}twelve{% endif %} columns main">
+            <section class="offset-by-one fourteen columns main">
                 {{ content }}
             </section>
         </div>
 
+        <p class="comment">Just a blog.</p>
+
+        <div class="menu">
+            <a href="#wheel" class="wheel-button"></a>
+
+            <ul id="wheel">
+                <li class="item"><a target="_blank" href="http://github.com/sonnyt"><i class="fa fa-github"></i></a></li>
+                <li class="item"><a target="_blank" href="http://twitter.com/sonnyt"><i class="fa fa-twitter"></i></a></li>
+                <li class="item"><a target="_blank" href="http://themeforest.net/user/sonnyt"><i class="fa fa-leaf"></i></a></li>
+                <li class="item"><a target="_blank" href="mailto:hi@sonnyt.com"><i class="fa fa-envelope"></i></a></li>
+                <li class="item"><a target="_blank" href="http://www.linkedin.com/pub/sonny-tulyaganov/18/964/910"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
         <!-- Google Analytics -->
         <script type="text/javascript">
 
@@ -51,8 +54,8 @@
         
         <!-- SCRIPTS -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/libs/twittie.min.js"></script>
-        <script type="text/javascript" src="/assets/js/libs/waypoints.min.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/jquery.wheelmenu.js"></script>
+        <script type="text/javascript" src="/assets/js/lib/waypoints.min.js"></script>
         <script type="text/javascript" src="/assets/js/main.js"></script>
     </body>
 </html>

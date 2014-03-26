@@ -3,16 +3,6 @@ layout: layout
 ---
 <div class="home">
     {% for post in site.posts %}
-        {% if post.type == 'text' %}
-            {% include posts/text.html %}
-        {% endif %}
-
-        {% if post.type == 'theme' %}
-            {% include posts/themeforest.html %}
-        {% endif %}
-
-        {% if post.type == 'resource' %}
-            {% include posts/resources.html %}
-        {% endif %}
+        {% include post.html %}
     {% endfor %}
 </div>

@@ -1,28 +1,16 @@
 ---
 layout: layout
 ---
-{% include icon.html %}
 
-<div class="post">
-    <article>
-        {% if page.image %}
-            <div class="image">
-                <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" style="width: 100%;" />
-            </div>
-        {% endif %}
-        <h1 class="title">{{ page.title }}</h1>
-        <div class="info">
-            <span><i class="icon-calendar"></i> {{ page.date | date: "%b. %d, %Y" }}</span>
-            <span><i class="icon-{{ icon }}"></i> {{ page.category }}</span>
-            <span>
-                {% for tag in page.tags %}
-                    <a href="/tags/{{ tag| slugize }}" class="tag">{{ tag }}</a>
-                {% endfor %}
-            </span>
-        </div>
-        
-        <div class="text">
-            {{ content }}
-        </div>
-    </article>
-</div>
+<article class="post" id="post-{{page.id}}">
+    {% if page.image %}
+        <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" alt="{{ page.title }}" class="featured-image" />
+    {% endif %}
+    <h3 class="title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h3>
+    <div class="info">
+        <span><i class="icon-calendar"></i> {{ page.date | date: "%b. %d, %Y" }}</span>
+    </div>
+    <div class="text format">
+        {{ content }}
+    </div>
+</article>

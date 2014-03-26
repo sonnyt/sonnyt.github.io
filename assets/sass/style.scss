@@ -2,47 +2,176 @@
 @import "compass";
 
 /* Import Partials */
-@import 'reset'; // HTML5 Doctor Reset
 @import 'skeleton'; // Fork of Skeleton Framework's 960 Response Grid
-@import '_pygments'; // Pygments CSS highlights
+@import 'pygments'; // Pygments CSS highlights
 
-@import 'keyframes';
-
-@import 'vars';
-@import 'fonts';
-@import 'buttons';
-@import 'sidebar';
-@import 'post';
 @import 'markdown';
-
-/* GLOBAL */
-* {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-         -o-box-sizing: border-box;
-            box-sizing: border-box;
-}
+@import 'format';
+@import 'fonts';
 
 body {
-    font: normal 400 14px/1.7 'Lato', sans-serif;
-    color: #373f47;
-    padding: 20px 0;
-}
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    color: #444;
+    font: normal 400 18px/1.7 'Merriweather', sans-serif;
 
-a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 700;
-
-    &:hover {
-        color: $prime;
-    }
+    -webkit-font-smoothing: subpixel-antialiased;
+       -moz-font-smoothing: subpixel-antialiased;
 }
 
 p {
-    padding: 10px 0;
+    margin: 20px 0;
 }
 
-.main {
-    line-height: 2;
+.menu {
+    position: fixed;
+    right: 150px;
+    bottom: 150px;
+
+    @media only screen and (max-width: 767px) {
+        bottom: 50px;
+    }
+
+    .wheel-button, &:visited {
+        border: 0px;
+        background: url('/assets/imgs/avatar.png') no-repeat;
+        background-size: 90px;
+        position: relative;
+        text-align: center;
+        border-radius: 50px;
+        width: 90px;
+        height: 90px;
+        color: white;
+        display: block;
+    }
+
+    .wheel {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 200px;
+        height: 200px;
+        visibility: hidden;
+        position: relative;
+        display: none;
+
+        li {
+            overflow: hidden;
+            float:left;
+
+            a {
+                border: 0px;
+                display: block;
+                background: #66c581;
+                border-radius: 50px;
+                padding: 10px;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                color: white;
+                -moz-transition: all 0.25s ease;
+                -webkit-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+
+                &:hover {
+                    background: #91ddaf;
+                }
+            }
+
+            i {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                -moz-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                transition: all 1s ease;
+                display: block;
+                line-height: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .pointer {
+        color: #fff;
+        font-size: 22px;
+        margin-top: -15px;
+    }
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 1px;
+
+    @include transition(all .22s ease);
+}
+
+a:hover {
+    color: #66c581;
+}
+
+.post {
+    opacity: 0;
+    padding: 80px 0;
+    border-bottom: 1px solid #c9c9c9;
+
+    @include transition-property(opacity, scale);
+    @include transition-duration(0.2s);
+    @include scale(.5,.5);
+
+    &.show {
+        opacity: 1;
+
+        @include scale(1, 1);
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 2.4em;
+        text-align: center;
+        margin: 15px 0;
+
+        a {
+            text-decoration: none;
+            border-bottom: 0px;
+        }
+    }
+
+    .featured-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .info {
+        color: #c9c9c9;
+        text-align: center;
+        padding: 15px 0;
+
+        span {
+            border-top: 1px solid #c9c9c9;
+            width: 40%;
+            display: inline-block;
+            padding-top: 15px;
+        }
+    }
+
+    p {
+        text-indent: 45px;
+    }
+
+    ul li p {
+        text-indent: 0;
+    }
+}
+
+.comment {
+    font-style: italic;
+    font-size: .9em;
+    color: #c9c9c9;
+    text-align: center;
 }

@@ -1,0 +1,18 @@
+<article class="post" id="post-{{post.id}}">
+    {% if post.image %}
+        <img src="/assets/imgs/{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}" class="featured-image" />
+    {% endif %}
+    <h3 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+    <div class="info">
+        <span><i class="icon-calendar"></i> {{ post.date | date: "%b. %d, %Y" }}</span>
+    </div>
+    {% if post.summary %}
+        <div class="text summary">
+            {{ post.summary }}
+        </div>
+    {% else %}
+        <div class="text format">
+            {{ post.content }}
+        </div>
+    {% endif %}
+</article>
