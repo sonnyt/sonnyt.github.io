@@ -3,13 +3,15 @@ layout: layout
 ---
 
 <article class="post" id="post-{{page.id}}">
-    {% if page.image %}
-        <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" alt="{{ page.title }}" class="featured-image" />
-    {% endif %}
     <h3 class="title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h3>
     <div class="info">
         <span><i class="icon-calendar"></i> {{ page.date | date: "%b. %d, %Y" }}</span>
     </div>
+
+    {% if page.image %}
+        <img src="/assets/imgs/{{ page.image }}" title="{{ page.title }}" alt="{{ page.title }}" class="featured-image" />
+    {% endif %}
+
     <div class="text format">
         {{ content }}
     </div>
