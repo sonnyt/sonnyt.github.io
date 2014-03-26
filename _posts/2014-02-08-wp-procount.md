@@ -24,3 +24,5 @@ The WP PROCount is very minimalistic and lightweight. It contains a customizable
 * **Responsive Design** - Crafted to provide easy reading and navigation with minimal resizing, panning, and scrolling across a wide range of devices.
 
 * **LESS Stylesheet** - LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions.
+
+Check it out at [ThemeWizz](http://themewizz.com/plugins/wp-procount/)

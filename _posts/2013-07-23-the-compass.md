@@ -22,3 +22,5 @@ The Compass is a beautiful responsive single page theme. This elaborate theme gi
 * **Multiple Color Sets** - Comes in three different color schemes: cool, dark and flat. Each color scheme includes its own LESS file that allows you to easily modify it to fit your needs.
 
 * **Responsive Design** - Crafted to provide easy reading and navigation with minimal resizing, panning, and scrolling across a wide range of devices.
+
+Check it out at [ThemeWizz](http://themewizz.com/themes/compass/)

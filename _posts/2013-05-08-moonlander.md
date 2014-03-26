@@ -24,3 +24,5 @@ MOONlander is a lightweight and simple theme; it only loads 2 images (that’s n
 * **MailChimp Integration** - Seamlessly integrated with MailChimp, allowing you to pool email addresses within seconds.
 
 * **Cross Browser Support** - Consistent with the latest browsers; such as, Chrome, Safari, FireFox, Opera and IE7+
+
+Check it out at [ThemeWizz](http://themewizz.com/themes/moonlander/)
