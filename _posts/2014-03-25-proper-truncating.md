@@ -7,7 +7,7 @@ image: false
 summary: false
 description: "PHP function that truncates a block of text without breaking a word."
 ---
-Here is a useful PHP function that truncates a block of text without breaking a word. This is usefull when creating an excerpt text and making sure that words are not cut off.
+Here is a useful PHP function that truncates a block of text without breaking a word. This is useful when creating an excerpt text and making sure that words are not cut off.
 
 {% highlight php %}
 <?php
@@ -28,4 +28,4 @@ Here is a useful PHP function that truncates a block of text without breaking a 
 ?>
 {% endhighlight %}
 
-When calling the function, you can pass a word limit, the default is `150`. Also, function accepts custom elipses, default is `...`.
+When calling the function, you can pass a word limit, the default is `150`. Also, function accepts custom ellipses, default is `...`.
