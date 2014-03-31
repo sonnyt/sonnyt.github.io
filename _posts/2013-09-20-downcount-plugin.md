@@ -1,5 +1,5 @@
 ---
-layout: resource
+layout: post
 title: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
 date: Sep. 20, 2013
 category: resources
