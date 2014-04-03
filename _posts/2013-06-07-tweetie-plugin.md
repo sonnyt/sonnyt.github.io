@@ -1,5 +1,5 @@
 ---
-layout: resource
+layout: post
 title: "jQuery Tweetie - Simple Twitter Feed Plugin"
 date: Jun. 07, 2013
 category: resources
