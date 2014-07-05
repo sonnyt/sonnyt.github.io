@@ -1,5 +1,5 @@
 exclude: ["Rakefile", "Gemfile", "config.rb", "README.md", "sass"]
-
+markdown: kramdown
 pygments: true
 
 # General
