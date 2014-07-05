@@ -24,84 +24,6 @@ p {
     margin: 25px 0;
 }
 
-.menu {
-    position: fixed;
-    right: 100px;
-    bottom: 100px;
-
-    @media only screen and (max-width: 767px) {
-        bottom: 50px;
-    }
-
-    .wheel-button, &:visited {
-        border: 0px;
-        background: url('/assets/imgs/avatar.png') no-repeat;
-        background-size: 90px;
-        position: relative;
-        text-align: center;
-        border-radius: 50px;
-        width: 90px;
-        height: 90px;
-        color: white;
-        display: block;
-    }
-
-    .wheel {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        width: 200px;
-        height: 200px;
-        visibility: hidden;
-        position: relative;
-        display: none;
-
-        li {
-            overflow: hidden;
-            float:left;
-
-            a {
-                border: 0px;
-                display: block;
-                background: #66c581;
-                border-radius: 50px;
-                padding: 10px;
-                text-align: center;
-                width: 20px;
-                height: 20px;
-                color: white;
-                -moz-transition: all 0.25s ease;
-                -webkit-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-
-                &:hover {
-                    background: #91ddaf;
-                }
-            }
-
-            i {
-                position: relative;
-                width: 20px;
-                height: 20px;
-                -moz-transition: all 1s ease;
-                -webkit-transition: all 1s ease;
-                -o-transition: all 1s ease;
-                transition: all 1s ease;
-                display: block;
-                line-height: 20px;
-                font-size: 16px;
-            }
-        }
-    }
-
-    .pointer {
-        color: #fff;
-        font-size: 22px;
-        margin-top: -15px;
-    }
-}
-
 a {
     color: #444;
     text-decoration: none;
@@ -109,10 +31,10 @@ a {
     padding-bottom: 1px;
 
     @include transition(all .22s ease);
-}
 
-a:hover {
-    color: #66c581;
+    &:hover {
+        color: #66c581;
+    }
 }
 
 .about {
@@ -123,6 +45,25 @@ a:hover {
         font-family: 'Lato';
         margin: 0;
         font-size: 2em;
+        float: left;
+    }
+
+    ul.socialmedia {
+        float: right;
+        list-style: none;
+        margin: 12px 0;
+        padding: 0;
+
+        li {
+            margin-left: 15px;
+            display: inline-block;
+
+            a {
+                font-size: 1.2em;
+                text-decoration: none;
+                border: 0;
+            }
+        }
     }
 }
 
