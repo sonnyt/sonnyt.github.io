@@ -2,10 +2,7 @@
 layout: post
 title: "WP PROCount"
 date: Feb. 08, 2014
-category: themeforest
-featured: false
 image: wpprocount.jpg
-summary: false
 description: "WP PROCount is a simple, clean and fully responsive mobile friendly landing page Wordpress plugin."
 ---
 

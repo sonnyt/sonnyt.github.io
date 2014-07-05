@@ -2,19 +2,8 @@
 layout: post
 title: "jQuery Tweetie - Simple Twitter Feed Plugin"
 date: Jun. 07, 2013
-category: resources
-featured: false
-type: resource
-tags:
-- freebie
-- resources
-- twitter
 image: tweetie.jpg
-summary: false
 description: "jQuery Tweetie - Simple Twitter Feed Plugin."
-demo: http://sonnyt.com/Tweetie
-github: https://github.com/sonnyt/Tweetie
-download: https://github.com/sonnyt/Tweetie/tags
 ---
 
 jQuery Tweetie - Simple Twitter Feed Plugin.

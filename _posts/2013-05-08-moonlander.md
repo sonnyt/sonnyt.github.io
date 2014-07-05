@@ -2,10 +2,7 @@
 layout: post
 title: "MOONlander"
 date: May. 08, 2013
-category: themeforest
-featured: false
 image: moonlander.jpg
-summary: false
 description: "MOONlander is a lightweight and simple theme; it only loads 2 images (that’s not counting the demo sample content)."
 ---
 

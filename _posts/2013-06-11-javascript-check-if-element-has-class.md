@@ -2,14 +2,7 @@
 layout: post
 title: "JavaScript Check If Element Has Class"
 date: Jun. 11, 2013
-category: blog
-featured: false
-type: text
-tags:
-- snippet
-- resources
 image: false
-summary: false
 description: "Check wether element contains a class, without using jQuery."
 ---
 Here is a little snippet If you're trying to check wether element contains a class, without using jQuery.

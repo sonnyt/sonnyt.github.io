@@ -2,19 +2,8 @@
 layout: post
 title: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
 date: Sep. 20, 2013
-category: resources
-featured: false
-type: resource
-tags:
-- freebie
-- resources
-- countdown
 image: downCount.jpg
-summary: false
 description: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
-demo: http://sonnyt.com/downCount
-github: https://github.com/sonnyt/downCount
-download: https://github.com/sonnyt/downCount/tags
 ---
 
 jQuery countdown plugin that accounts for timezone. Plugin requires you to set your UTC offset. You can find your UTC offset [here](http://www.timeanddate.com/library/abbreviations/timezones/). Currently the offset is set to NYC -4 UTC.

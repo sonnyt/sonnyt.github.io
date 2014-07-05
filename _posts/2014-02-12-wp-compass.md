@@ -2,10 +2,7 @@
 layout: post
 title: "The WP Compass"
 date: Feb. 12, 2014
-category: themeforest
-featured: true
 image: wpcompass.jpg
-summary: false
 description: "The WP Compass is a beautiful responsive single page Wordpress theme."
 ---
 

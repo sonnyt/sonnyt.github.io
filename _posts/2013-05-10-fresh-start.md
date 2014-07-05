@@ -2,14 +2,7 @@
 layout: post
 title: "Fresh Start"
 date: May. 10, 2013
-category: blog
-featured: false
-type: text
-tags:
-- jekyll
-- github
 image: false
-summary: false
 description: "Jekyll site built using Compass/Sass and jQuery hosted in Github Pages."
 ---
 

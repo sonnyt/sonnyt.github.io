@@ -2,10 +2,7 @@
 layout: post
 title: "The Compass"
 date: Jul. 23, 2013
-category: themeforest
-featured: false
 image: compass.jpg
-summary: false
 description: "Simple and yet beautiful responsive theme for personal vCard, portfolio or resume use."
 ---
 

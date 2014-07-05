@@ -2,15 +2,7 @@
 layout: post
 title: "Wordpress WP_Query custom post order"
 date: Aug. 09, 2013
-category: blog
-featured: false
-type: text
-tags:
-- snippet
-- wordpress
-- resources
 image: false
-summary: false
 description: "Order Wordpress WP_Query posts by array list post IDs."
 ---
 Recently, I had to build a Wordpress Admin widget area which enables a user to select, change order and save a list of posts. Selected post IDs are stored in an `array()` which can be found in the options table. It looks something like this:
