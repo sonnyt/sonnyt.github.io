@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "jQuery Touch Event Binding"
-date: Jul. 17, 2014
+date: Jul. 15, 2014
 image: false
 description: false
 ---
