@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Angular.js Number Range"
+date: Jul. 3, 2015
+image: false
+description: "Angular.js simple range between numbers filter"
+---
+
 {% highlight javascript %}
 var myApp = angular.module('myApp', []);
 
