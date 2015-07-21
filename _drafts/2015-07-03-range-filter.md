@@ -10,18 +10,24 @@ description: "Angular.js simple range between numbers filter"
 var myApp = angular.module('myApp', []);
 
 myApp.filter('range', function() {
-    return function(arr, from, to) {
-        var min = +from;
-        var max = +to;
-        var i = min;
+    return function(input, start, stop, step) {
+        var length, i;
 
-        while (i < max + 1) {
-            arr.push(i);
-            
-            i++;
+        if (!stop) {
+            stop = start || 0;
+            start = 0;
         }
-        
-        return arr;
+
+        step = step || 1;
+
+        length = Math.max(Math.ceil((stop - start) / step), 0);
+        i = 0;
+
+        for (; i < length; i++, start += step) {
+            input.push(start);
+        }
+
+        return input;
     };
 });
 {% endhighlight %}
