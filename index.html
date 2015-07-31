@@ -17,6 +17,10 @@ layout: layout
     </div>
 
     {% for post in site.posts %}
-        {% include post.html %}
+        {% if forloop.index <= 10 %}
+            {% include post.html %}
+        {% else %}
+            {% include post-title.html %}
+        {% endif %}
     {% endfor %}
 </div>
