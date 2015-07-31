@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Angular.js Number Range"
-date: Jul. 3, 2015
+date: Jul. 31, 2015
 image: false
 description: "Angular.js simple range between numbers filter"
 ---
