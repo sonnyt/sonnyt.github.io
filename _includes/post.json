@@ -1,9 +1,0 @@
-{
-    "title"    : "{{ post.title }}",
-    "category" : "{{ post.category }}",
-    "featured" : "{{ post.featured }}",
-    "type"     : "{{ post.type }}",
-    "date"     : "{{ post.date }}",
-    "href"     : "{{ post.url }}",
-    "contnet"  : "{{ post.content | strip_html | truncatewords: 50 }}"
-}

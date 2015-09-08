@@ -8,6 +8,8 @@ description: false
 
 If you want to convert HEX decimal color to RGB here is a little handy function.
 
+<!--break-->
+
 {% highlight php %}
 <?php
 function hexToRgb ( $hex )

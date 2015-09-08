@@ -7,7 +7,7 @@ description: false
 ---
 
 While I was working on the jQuery prettySocial. One of the biggest hurdles I encountered was dynamically binding touch events to the DOM element. The problem was not actually the binding, but the fact that event was being called when user scrolling the page with their finger. There is an in depth [article](http://briangonzalez.org/posts/mouse-and-touch-events-done-right) about this by Brian G.
-
+<!--break-->
 My solution to this was to capture the scroll event. Here is the snippet.
 
 {% highlight javascript %}

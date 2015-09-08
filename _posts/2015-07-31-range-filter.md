@@ -7,7 +7,7 @@ description: "Angular.js simple range between numbers filter"
 ---
 
 Recently, while working on one of the projects at Onevest. I needed a dropdown list of years between 2015 and 1980. Instead of tryping each year out, I decided to create a tiny angular filter that iterates between two numbers.
-
+<!--break-->
 I extracted the `_.range()` function from [Underscore.js](http://underscorejs.org/#range) to make things easier.
 
 {% highlight javascript %}
