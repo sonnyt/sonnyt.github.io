@@ -5,7 +5,7 @@
     <title>{% if page.title %} {{ page.title }} | {% endif %} Sonny T.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?bust={{ site.time | date: '%s' }}" />
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% else %}
