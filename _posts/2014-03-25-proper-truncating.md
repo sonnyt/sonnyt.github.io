@@ -7,6 +7,8 @@ description: "PHP function that truncates a block of text without breaking a wor
 ---
 Here is a useful PHP function that truncates a block of text without breaking a word. This is useful when creating an excerpt text and making sure that words are not cut off.
 
+<!--break-->
+
 {% highlight php %}
 <?php
     function truncate($text, $limit = 150, $elips = '...')

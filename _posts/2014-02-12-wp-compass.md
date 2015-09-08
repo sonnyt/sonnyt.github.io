@@ -7,7 +7,7 @@ description: "The WP Compass is a beautiful responsive single page Wordpress the
 ---
 
 The WP Compass is a beautiful responsive single page Wordpress theme. This elaborate theme gives your blog, portfolio, vCard or resume a unique and fresh look. The theme is very easy to customize; it was built and documented with a novice in mind. The WP Compass comes with 3 beautiful color sets, 2 different options for animation effects, and full screen slideshow. The Wordpress theme is also equipped with Font Awesome icons and Google Fonts.
-
+<!--break-->
 **The WP Compass is fully SEO friendly, despite the fact that the pages are loaded via Ajax.**
 
 ##Features
