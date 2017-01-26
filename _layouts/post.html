@@ -2,26 +2,17 @@
 layout: blog
 ---
 
-<div class="navgation">
-  <div class="row">
-    <div class="col-xs-6">
-      <h4><a href="/"><i class="fa fa-chevron-left"></i> HOME</a></h4>
+<div class="col-md-8 col-md-offset-2">
+  <article class="post" id="post-{{page.id | slugify}}">
+    <span class="date">{{page.date | date: "%B %-d, %Y"}}</span>
+    <h1 class="title">{{ page.title }}</h1>
+    <div class="meta">
+      {% if page.category %}
+        Posted In: "<a href="/blog/{{ page.category }}">{{ page.category }}</a>"
+      {% endif %}
     </div>
-    <div class="col-xs-6 text-right">
-      <h4><a href="/blog">ARCHIVES</a></h4>
+    <div class="content format">
+      {{ content }}
     </div>
-  </div>
+  </article>
 </div>
-
-<article class="post" id="post-{{page.id | slugify}}">
-  <span class="date">{{page.date | date: "%B %-d, %Y"}}</span>
-  <h1 class="title">{{ page.title }}</h1>
-  <div class="meta">
-    {% if page.category %}
-      Posted In: "<a href="/blog/{{ page.category }}">{{ page.category }}</a>"
-    {% endif %}
-  </div>
-  <div class="content format">
-    {{ content }}
-  </div>
-</article>

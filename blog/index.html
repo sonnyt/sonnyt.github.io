@@ -2,10 +2,51 @@
 layout: blog
 ---
 
-<div class="navgation">
-  <h4><a href="/"><i class="fa fa-chevron-left"></i> HOME</a></h4>
-</div>
+<div class="col-md-10 col-md-offset-1">
+  <section class="section blog-list">
+    <div class="row">
+      <div class="col-md-12">
 
-{% for post in site.posts %}
-  {% include post.html %}
-{% endfor %}
+        {% for post in site.posts  %}
+          {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+          {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+          {% if forloop.first %}
+            <div class="row content">
+              <div class="col-md-2">
+                <h2>{{this_year}}</h2>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+          {% endif %}
+                    <article class="col-md-12">
+                      <h3>
+                        <a href="{{post.url}}" title="{{post.title}}">
+                          {{post.title}}
+                          <small class="pull-right hidden-xs">{{post.date | date: "%B %-d"}}</small>
+                        </a>
+                      </h3>
+                    </article>
+          {% if forloop.last %}
+                </div>
+              </div>
+            </div>
+          {% else %}
+            {% if this_year != next_year %}
+                  </div>
+                </div>
+              </div>
+              <div class="row content">
+                <div class="col-md-2">
+                  <h2>{{next_year}}</h2>
+                </div>
+                <div class="col-md-10">
+                  <div class="row">
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+</div>
