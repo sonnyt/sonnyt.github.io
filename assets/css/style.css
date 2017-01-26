@@ -1,89 +1,41 @@
+@import "homepage.css";
+@import "blog.css";
+@import "pygments.css";
+
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 1.75em;
-    font-family: 'Open Sans', sans-serif;
-    color: #597a96;
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.75em;
+  font-family: 'Open Sans', sans-serif;
+  color: #597a96;
 }
 
 p {
-    margin: 0 0 15px;
+  margin: 0 0 15px;
 }
 
 a {
-    color: #597a96;
-    text-decoration: none;
-    border-bottom: 1px dotted;
+  color: #597a96;
+  text-decoration: none;
+  border-bottom: 1px dotted;
 }
 
 a:hover, a:active, a:focus {
-    color: #12aaeb;
-    text-decoration: none;
+  color: #12aaeb;
+  text-decoration: none;
 }
 
-header {
-    padding: 210px 0 350px;
-}
-
-header h1.title {
-    color: #043140;
-    margin: 0 0 30px;
-    font-size: 4.3rem;
-}
-
-header h1.title a {
-    color: #d4dbe3;
-    border: 0;
-    margin: 0 3px;
-}
-
-header h1.title a.fa-twitter:hover {
-    color: #00aced;
-}
-
-header h1.title a.fa-linkedin:hover {
-    color: #007bb5;
-}
-
-header h1.title a.fa-github:hover {
-    color: #666666;
-}
-
-header h1, h2, h3 {
-    font-weight: 300;
-}
-
-section .content {
-    padding: 80px 0 50px;
-}
-
-section h2 {
-    margin: 0 0 25px;
-    font-size: 3.4rem;
-}
-
-section h3 {
-    margin: 0 0 10px;
-    font-weight: 400;
-}
-
-article {
-    margin-bottom: 30px;
-}
-
-hr {
-    margin: 0;
-    border-color: #d4dbe3;
-    border-width: 3px;
+.text-right {
+  text-align: right;
 }

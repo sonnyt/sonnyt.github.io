@@ -2,7 +2,6 @@
 layout: post
 title: "PHP Color Conversion Functions"
 date: Jul. 18, 2014
-image: false
 description: false
 ---
 
@@ -12,7 +11,7 @@ If you want to convert HEX decimal color to RGB here is a little handy function.
 
 {% highlight php %}
 <?php
-function hexToRgb ( $hex )
+function hexToRgb( $hex )
 {
 	$hex = str_replace( '#', '', $hex );
 
@@ -37,7 +36,7 @@ If you want to convert RGB to HEX, use this one.
 
 {% highlight php %}
 <?php
-function rgbToHex ( $rgb ) {
+function rgbToHex( $rgb ) {
    $hex = '';
 
    $hex .= str_pad( dechex( $rgb[0] ), 2, '0', STR_PAD_LEFT );

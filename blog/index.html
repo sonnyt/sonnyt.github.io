@@ -1,8 +1,12 @@
 ---
-layout: layout
+layout: blog
+class: 'blog'
 ---
-<div class="container">
-  {% for post in site.posts %}
-    {% include post.html %}
-  {% endfor %}
+
+<div class="navgation">
+  <h4><a href="/"><i class="fa fa-chevron-left"></i> HOME</a></h4>
 </div>
+
+{% for post in site.posts %}
+  {% include post.html %}
+{% endfor %}

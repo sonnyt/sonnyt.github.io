@@ -2,7 +2,6 @@
 layout: post
 title: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
 date: Sep. 20, 2013
-image: downCount.jpg
 description: "jQuery downCount - TimeZone Sensitive Countdown Plugin"
 ---
 
@@ -21,7 +20,7 @@ Initlize just like any other plugin.
 $('.countdown').downCount({
     date: '08/27/2013 12:00:00',
     offset: -5
-}, function () {
+}, function() {
     alert('WOOT WOOT, done!');
 });
 {% endhighlight %}

@@ -1,0 +1,67 @@
+body.home header {
+  padding: 210px 0 350px;
+}
+
+header h1.title {
+  color: #043140;
+  margin: 0 0 30px;
+  font-size: 4.3rem;
+}
+
+header h1.title a {
+  color: #d4dbe3;
+  border: 0;
+  margin: 0 3px;
+}
+
+header h1.title a.fa-twitter:hover {
+  color: #00aced;
+}
+
+header h1.title a.fa-linkedin:hover {
+  color: #007bb5;
+}
+
+header h1.title a.fa-github:hover {
+  color: #666666;
+}
+
+header h1,
+body.home h2,
+body.home h3,
+body.home h4 {
+  font-weight: 300;
+}
+
+section .content {
+  padding: 80px 0 50px;
+}
+
+section h2 {
+  margin: 0 0 25px;
+  font-size: 3.4rem;
+}
+
+section h3 {
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+section h4 {
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+section article {
+  margin-bottom: 30px;
+}
+
+section.blog article a {
+  display: block;
+}
+
+section hr {
+  margin: 0;
+  border-color: #d4dbe3;
+  border-width: 3px;
+}

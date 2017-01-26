@@ -2,7 +2,6 @@
 layout: post
 title: "jQuery prettySocial - custom social share buttons"
 date: Jul. 05, 2014
-image: prettySocial.png
 description: false
 ---
 

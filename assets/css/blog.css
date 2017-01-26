@@ -1,0 +1,120 @@
+body.blog {
+  padding: 40px 0;
+}
+
+.navgation {
+  margin-bottom: 50px;
+}
+
+.navgation h4 {
+  margin: 0;
+}
+
+.navgation a {
+  border: 0;
+}
+
+article.post {
+  color: #043140;
+  margin-bottom: 60px;
+  padding: 0 10px 60px;
+  border-bottom: 1px solid #d4dbe3;
+}
+
+article.post:last-child {
+  border-width: 3px;
+}
+
+article.post .title {
+  font-family: 'Merriweather', Georgia, serif;
+  margin: 0 0 20px;
+  font-size: 3.6rem;
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+article.post .title a {
+  text-decoration: none;
+  border: 0;
+  color: #043140;
+}
+
+article.post .title a:hover {
+  color: #12aaeb;
+}
+
+article.post .content {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.4rem;
+  line-height: 2.3;
+  font-weight: 400;
+}
+
+article.post .content code {
+  background-color: #f5f6f7;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+article.post .content pre {
+  background-color: #333;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 15px;
+  margin: 15px 0 20px;
+  border-radius: 3px;
+}
+
+article.post .content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+article.post .date {
+  font-size: 1.3rem;
+  color: #597a96;
+  font-weight: 400;
+}
+
+article.post .content p {
+  margin-bottom: 20px;
+}
+
+article.post .content blockquote {
+  position: relative;
+  background-color: #f5f6f7;
+  margin: 0;
+  font-style: italic;
+  padding: 15px 40px 15px 30px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+article.post .content blockquote p {
+  margin-bottom: 0;
+}
+
+article.post .content blockquote:before {
+  color: #597a96;
+  font-family: Georgia, serif;
+  content: "”";
+  font-style: normal;
+  position: absolute;
+  right: -18px;
+  top: 15px;
+  font-size: 9rem;
+  line-height: 1;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.profile {
+  border-bottom: 3px solid #d4dbe3;
+  padding: 20px 0 40px;
+  margin-bottom: 60px;
+}

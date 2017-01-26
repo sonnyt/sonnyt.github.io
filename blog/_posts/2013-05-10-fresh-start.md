@@ -2,7 +2,6 @@
 layout: post
 title: "Fresh Start"
 date: May. 10, 2013
-image: false
 description: "Jekyll site built using Compass/Sass and jQuery hosted in Github Pages."
 ---
 

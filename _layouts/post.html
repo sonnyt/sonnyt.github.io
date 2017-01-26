@@ -1,0 +1,23 @@
+---
+layout: blog
+class: 'blog post'
+---
+
+<div class="navgation">
+  <div class="row">
+    <div class="col-xs-6">
+      <h4><a href="/"><i class="fa fa-chevron-left"></i> HOME</a></h4>
+    </div>
+    <div class="col-xs-6 text-right">
+      <h4><a href="/blog">ARCHIVES</a></h4>
+    </div>
+  </div>
+</div>
+
+<article class="post" id="post-{{page.id}}">
+  <span class="date">{{page.date | date: "%B %-d, %Y"}}</span>
+  <h1 class="title">{{ page.title }}</h1>
+  <div class="content format">
+    {{ content }}
+  </div>
+</article>

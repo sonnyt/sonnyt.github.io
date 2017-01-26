@@ -2,7 +2,6 @@
 layout: post
 title: "Proper Truncating"
 date: Mar. 25, 2014
-image: false
 description: "PHP function that truncates a block of text without breaking a word."
 ---
 Here is a useful PHP function that truncates a block of text without breaking a word. This is useful when creating an excerpt text and making sure that words are not cut off.

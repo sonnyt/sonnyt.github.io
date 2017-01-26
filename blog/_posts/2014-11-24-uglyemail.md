@@ -2,7 +2,6 @@
 layout: post
 title: "Introducing Ugly Email"
 date: Nov. 24, 2014
-image: false
 description: "Gmail Extension To Check If Email Is Being Tracked."
 ---
 

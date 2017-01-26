@@ -2,7 +2,6 @@
 layout: post
 title: "jQuery Tweetie - Simple Twitter Feed Plugin"
 date: Jun. 07, 2013
-image: tweetie.jpg
 description: "jQuery Tweetie - Simple Twitter Feed Plugin."
 ---
 

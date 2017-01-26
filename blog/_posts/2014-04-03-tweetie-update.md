@@ -2,7 +2,6 @@
 layout: post
 title: "Tweetie v2.3 Update"
 date: Apr. 03, 2014
-image: false
 description: false
 ---
 

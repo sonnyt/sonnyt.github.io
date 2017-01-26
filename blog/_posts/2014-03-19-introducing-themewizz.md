@@ -2,7 +2,6 @@
 layout: post
 title: "Introducing ThemeWizz"
 date: Mar. 19, 2014
-image: false
 description: "All Sonny T. themes and plugins are moved over to ThemeWizz.com"
 ---
 

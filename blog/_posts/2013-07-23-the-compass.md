@@ -2,7 +2,6 @@
 layout: post
 title: "The Compass"
 date: Jul. 23, 2013
-image: compass.jpg
 description: "Simple and yet beautiful responsive theme for personal vCard, portfolio or resume use."
 ---
 

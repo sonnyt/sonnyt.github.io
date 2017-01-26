@@ -1,16 +1,13 @@
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <article class="post" id="post-{{post.id}}">
-      <h3 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-      {% if post.summary %}
-        <div class="text summary">
-          {{ post.summary }}
-        </div>
-      {% else %}
-        <div class="text format">
-          {{ post.content }}
-        </div>
-      {% endif %}
-    </article>
-  </div>
-</div>
+<article class="post" id="post-{{post.id}}">
+  <span class="date">{{post.date | date: "%B %-d, %Y"}}</span>
+  <h3 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+  {% if post.summary %}
+    <div class="content summary">
+      {{ post.summary }}
+    </div>
+  {% else %}
+    <div class="content format">
+      {{ post.content }}
+    </div>
+  {% endif %}
+</article>

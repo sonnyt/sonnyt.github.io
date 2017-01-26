@@ -2,7 +2,6 @@
 layout: post
 title: "jQuery Touch Event Binding"
 date: Jul. 15, 2014
-image: false
 description: false
 ---
 
@@ -12,19 +11,19 @@ My solution to this was to capture the scroll event. Here is the snippet.
 
 {% highlight javascript %}
     $('.link')
-    .bind('touchstart', function (e) {
+    .bind('touchstart', function(e) {
         if(e.originalEvent.touches.length > 1) {
             return;
         }
 
         $(this).data('touchWithoutScroll', true);
     })
-    .bind('touchmove', function () {
+    .bind('touchmove', function() {
         $(this).data('touchWithoutScroll', false);
 
         return;
     })
-    .bind('touchend', function (e) {
+    .bind('touchend', function(e) {
         e.preventDefault();
 
         var touchWithoutScroll = $(this).data('touchWithoutScroll');
