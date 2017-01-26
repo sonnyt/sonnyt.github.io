@@ -1,13 +1,14 @@
 # General
 title: Sonny T.
-description: New York based web junkie. Currently lead developer at StyleCaster Media Group.
+description: I am a New York City based web developer. <br /> Currently a Web Engineer at <a target="_blank" href="http://simulmedia.com" title="Simulmedia">Simulmedia</a> and a founder of <a target="_blank" href="http://oneclicklab.com" title="OneClick Lab">OneClick Lab</a>.
 url: http://sonnyt.com
-github_url: http://sonnyt.github.io
-permalink: /:categories/:title
+permalink: /blog/:title
+years: 2014 - 2017
 
-# Network usernames
-twitter: sonnyt
-github_user: sonnyt
-linkedin: sonny-tulyaganov/18/964/910
-email: hi@sonnyt.com
-themeforest: sonnyt
+contact:
+  twitter: sonnyt
+  github: sonnyt
+  linkedin: in/sonnytulyaganov
+  email: hi@sonnyt.com
+  themeforest: sonnyt
+  instagram: sonnytcom
