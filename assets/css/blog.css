@@ -107,14 +107,16 @@ article.post .content blockquote:before {
   line-height: 1;
 }
 
+article.post .meta {
+  border-bottom: 1px solid #d4dbe3;
+  padding: 0 0 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
 .copyright {
   font-size: 1.2rem;
   line-height: 1;
   font-weight: 400;
-}
-
-.profile {
-  border-bottom: 3px solid #d4dbe3;
-  padding: 20px 0 40px;
-  margin-bottom: 60px;
 }

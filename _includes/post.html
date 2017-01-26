@@ -1,13 +1,7 @@
-<article class="post" id="post-{{post.id}}">
+<article class="post" id="post-{{post.id | slugify}}">
   <span class="date">{{post.date | date: "%B %-d, %Y"}}</span>
   <h3 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-  {% if post.summary %}
-    <div class="content summary">
-      {{ post.summary }}
-    </div>
-  {% else %}
-    <div class="content format">
-      {{ post.content }}
-    </div>
-  {% endif %}
+  <div class="content format">
+    {{ post.content | split:'<!--break-->' | first }}
+  </div>
 </article>

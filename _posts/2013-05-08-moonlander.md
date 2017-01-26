@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "Countie"
-date: May. 09, 2013
-description: "Countie is a very minimalistic and lightweight theme; it only loads 2 images (that’s not counting the demo sample content)."
+title: "MOONlander"
+date: May. 08, 2013
+description: "MOONlander is a lightweight and simple theme; it only loads 2 images (that’s not counting the demo sample content)."
+category: news
 ---
 
-Countie is a very minimalistic and lightweight theme; it only loads 2 images (that’s not counting the demo sample content). Theme contains a customizable Countdown Clock, Twitter Feed and MailChimp plugins. Countie also comes with a LESS Stylesheet file that you can use to customize the page however you would like.
+MOONlander is a lightweight and simple theme; it only loads 2 images (that’s not counting the demo sample content). Theme contains a customizable Countdown Clock, Twitter Feed and Mailchimp plugins. MOONlander also comes with a LESS Stylesheet file that you can use to customize the page however you would like.
+
+<!--break-->
 
 ##Features
 
@@ -21,4 +24,4 @@ Countie is a very minimalistic and lightweight theme; it only loads 2 images (th
 
 * **Cross Browser Support** - Consistent with the latest browsers; such as, Chrome, Safari, FireFox, Opera and IE7+
 
-Check it out at [ThemeWizz](http://themewizz.com/themes/countie/)
+Check it out at [ThemeWizz](http://themewizz.com/themes/moonlander/)

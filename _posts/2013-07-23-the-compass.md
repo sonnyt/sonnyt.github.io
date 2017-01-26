@@ -3,9 +3,12 @@ layout: post
 title: "The Compass"
 date: Jul. 23, 2013
 description: "Simple and yet beautiful responsive theme for personal vCard, portfolio or resume use."
+category: news
 ---
 
 The Compass is a beautiful responsive single page theme. This elaborate theme gives your portfolio, vCard or resume a unique and fresh look. The theme is very easy to personalize; it was built and documented with a novice in mind. The Compass comes with 3 beautiful color sets, 2 different options for animation effects, and full screen slideshow. The theme is also equipped with LESS files, Font Awesome icons and Google Fonts.
+
+<!--break-->
 
 ##Features
 

@@ -3,6 +3,7 @@ layout: post
 title: "Introducing ThemeWizz"
 date: Mar. 19, 2014
 description: "All Sonny T. themes and plugins are moved over to ThemeWizz.com"
+category: news
 ---
 
 I am proud to announce that starting today, all my themes will be moved over to their own property. Recently I've decided to rebrand all my Envato products and give them their own home. After few frustrating weeks of figuring out a name, I concluded on ThemeWizz.

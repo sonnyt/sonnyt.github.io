@@ -3,6 +3,7 @@ layout: post
 title: "Fresh Start"
 date: May. 10, 2013
 description: "Jekyll site built using Compass/Sass and jQuery hosted in Github Pages."
+category: news
 ---
 
 Finally, I got over my bad habit of procrastinating and updated my site. It's been forever since I touched it; mainly because I've been super busy working on different projects.

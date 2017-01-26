@@ -13,9 +13,14 @@ layout: blog
   </div>
 </div>
 
-<article class="post" id="post-{{page.id}}">
+<article class="post" id="post-{{page.id | slugify}}">
   <span class="date">{{page.date | date: "%B %-d, %Y"}}</span>
   <h1 class="title">{{ page.title }}</h1>
+  <div class="meta">
+    {% if page.category %}
+      Posted In: "<a href="/blog/{{ page.category }}">{{ page.category }}</a>"
+    {% endif %}
+  </div>
   <div class="content format">
     {{ content }}
   </div>

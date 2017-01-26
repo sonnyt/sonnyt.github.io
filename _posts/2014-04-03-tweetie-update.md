@@ -3,6 +3,7 @@ layout: post
 title: "Tweetie v2.3 Update"
 date: Apr. 03, 2014
 description: false
+category: news
 ---
 
 Just released a new version of Tweetie.

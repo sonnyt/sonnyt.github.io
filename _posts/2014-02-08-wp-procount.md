@@ -3,6 +3,7 @@ layout: post
 title: "WP PROCount"
 date: Feb. 08, 2014
 description: "WP PROCount is a simple, clean and fully responsive mobile friendly landing page Wordpress plugin."
+category: news
 ---
 
 WP PROCount is a simple, clean and fully responsive mobile friendly landing page Wordpress plugin.

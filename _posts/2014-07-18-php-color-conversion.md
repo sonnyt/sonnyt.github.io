@@ -3,6 +3,7 @@ layout: post
 title: "PHP Color Conversion Functions"
 date: Jul. 18, 2014
 description: false
+category: development
 ---
 
 If you want to convert HEX decimal color to RGB here is a little handy function.
