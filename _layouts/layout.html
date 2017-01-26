@@ -21,7 +21,7 @@
     <meta name="keyword" content="{{ page.tags || join:',' }}" />
   {% endif; %}
 </head>
-<body {% if page.class %}class="{{ page.class }}"{% endif %}>
+<body {% if layout.class %}class="{{ layout.class }}"{% endif %}>
   {{ content }}
 
   <script>
