@@ -1,3 +1,6 @@
+gems:
+  - jekyll-redirect-from
+
 # General
 title: Sonny T.
 description: I am a New York City based web developer. <br /> Currently a Web Engineer at <a target="_blank" href="http://simulmedia.com" title="Simulmedia">Simulmedia</a> and a founder of <a target="_blank" href="http://oneclicklab.com" title="OneClick Lab">OneClick Lab</a>.
