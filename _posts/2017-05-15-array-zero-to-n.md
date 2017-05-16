@@ -9,7 +9,7 @@ This short post intended to show how easy it is to create an array with 0 - n wi
 
 Old way:
 
-```
+```js
 var arr = [];
 for(var i = 0; i <= 10; i++) {
 	arr.push(i);
@@ -20,7 +20,7 @@ arr // [0,1,2,3,4,5,6,7,8,9,10];
 
 New ES6 way:
 
-```
+```js
 let arr = [...Array(11).keys()];
 
 arr // [0,1,2,3,4,5,6,7,8,9,10];
