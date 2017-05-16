@@ -6,7 +6,7 @@ category: development
 ---
 
 This short post intended to show how easy it is to create an array with 0 - n with ES6 version of JavaScript.
-
+<!--break-->
 Old way:
 
 ```js
