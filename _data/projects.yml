@@ -1,19 +1,23 @@
 -
+  name: Onset
+  url: https://onset.io
+  description: Keep your teams and stakeholders in the loop on the latest features and product updates, all in one place with Onset.
+-
   name: Ugly Email
-  url: http://uglyemail.com
-  description: Gmail extension to check if your email is being tracked.
+  url: https://uglyemail.com
+  description: 'The #1 most downloaded Gmail extension for blocking read receipts and other email tracking pixels.'
 -
   name: StyleGreed
   url: http://www.stylegreed.com
-  description: Find, like, and buy all of your fashion and beauty needs in a single swipe.
+  description: The easiest way to find, like, and buy all of your fashion and beauty needs in a single swipe.
 -
   name: ThemeWizz
-  url: http://themewizz.com
+  url: https://themewizz.com
   description: Beautiful Wordpress/HTML theme and plugin market.
 -
   name: LAYATea
   url: http://www.layatea.com
-  description: A  recipe manager app centered around healthy drinks.
+  description: Your go to app for health, education and delicious enjoyment.
 -
   name: Water Glass
   url: http://waterglass.oneclicklab.com
