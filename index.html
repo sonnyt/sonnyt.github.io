@@ -9,16 +9,16 @@ layout: layout
       <p>{{ site.description }}</p>
 
       <p>
-        <a href="mailto:{{ site.contact.email }}" target="_blank" title="{{ site.contact.email }}">Hit me up</a> if you're interested in working together.
+        <a href="mailto:{{ site.contact.email }}" rel="noopener" target="_blank" title="{{ site.contact.email }}">Hit me up</a> if you're interested in working together.
       </p>
 
       <p>
         <strong>Find me on:</strong> <br />
-        <a href="http://twitter.com/{{ site.contact.twitter }}" target="_blank" title="@{{ site.contact.twitter }}">Twitter</a>,
-        <a href="http://github.com/{{ site.contact.github }}" target="_blank" title="@{{ site.contact.github }}">Github</a>,
-        <a href="http://themeforest.net/user/{{ site.contact.themeforest }}" target="_blank" title="@{{ site.contact.themeforest }}">ThemeForest</a>,
-        <a href="http://instagram.com/{{ site.contact.instagram }}" target="_blank" title="@{{ site.contact.instagram }}">Instagram</a>,
-        <a href="http://linkedin.com/{{ site.contact.linkedin }}" target="_blank" title="/{{ site.contact.linkedin }}">LinkedIn</a>
+        <a href="http://twitter.com/{{ site.contact.twitter }}" rel="noopener" target="_blank" title="@{{ site.contact.twitter }}">Twitter</a>,
+        <a href="http://github.com/{{ site.contact.github }}" rel="noopener" target="_blank" title="@{{ site.contact.github }}">Github</a>,
+        <a href="http://themeforest.net/user/{{ site.contact.themeforest }}" rel="noopener" target="_blank" title="@{{ site.contact.themeforest }}">ThemeForest</a>,
+        <a href="http://instagram.com/{{ site.contact.instagram }}" rel="noopener" target="_blank" title="@{{ site.contact.instagram }}">Instagram</a>,
+        <a href="http://linkedin.com/{{ site.contact.linkedin }}" rel="noopener" target="_blank" title="/{{ site.contact.linkedin }}">LinkedIn</a>
       </p>
     </div>
   </header>
@@ -28,7 +28,7 @@ layout: layout
     <div class="container">
       {% for project in site.data.projects  %}
         <article>
-          <h3><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></h3>
+          <h3><a href="{{ project.url }}" rel="noopener" target="_blank">{{ project.name }}</a></h3>
           <p>{{ project.description }}</p>
         </article>
       {% endfor %}
@@ -38,7 +38,7 @@ layout: layout
     <div class="container">
       {% for mention in site.data.mentions  %}
         <article>
-          <h3><a href="{{ mention.link }}" target="_blank">{{ mention.name }}</a></h3>
+          <h3><a href="{{ mention.link }}" rel="noopener" target="_blank">{{ mention.name }}</a></h3>
           <p>{{ mention.title }}</p>
         </article>
       {% endfor %}

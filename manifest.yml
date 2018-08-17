@@ -1,0 +1,11 @@
+---
+permalink: manifest.webmanifest
+---
+
+{
+  "name": "{{ site.title | strip_html }}",
+  "short_name": "{{ site.title | strip_html }}",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "{{ site.description | strip_html }}"
+}
