@@ -1,153 +1,19 @@
 ---
 layout: layout
-class: 'home'
 ---
 
-<header class="container header">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <h1 class="title">
-        {{ site.title }}
-        <a target="_blank" href="http://twitter.com/{{ site.contact.twitter }}" title="Twitter" class="fa fa-twitter"></a>
-        <a target="_blank" href="http://github.com/{{ site.contact.github }}" title="Github" class="fa fa-github"></a>
-        <a target="_blank" href="http://linkedin.com/{{ site.contact.linkedin }}" title="LinkedIn" class="fa fa-linkedin"></a>
-      </h1>
-      <p>{{ site.description }}</p>
-    </div>
-  </div>
-</header>
-
-<section class="container section">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <hr />
-      <div class="row content">
-        <div class="col-md-3">
-          <h2>Projects</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://uglyemail.com" title="Ugly Email">Ugly Email</a></h3>
-              <p>Gmail extension to check if your email is being tracked.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://www.stylegreed.com" title="StyleGreed">StyleGreed</a></h3>
-              <p>Find, like, and buy all of your fashion and beauty needs in a single swipe.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://themewizz.com" title="ThemeWizz">ThemeWizz</a></h3>
-              <p>Beautiful Wordpress/HTML theme and plugin market.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://www.layatea.com" title="LAYATea">LAYATea</a></h3>
-              <p>A  recipe manager app centered around healthy drinks.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://waterglass.oneclicklab.com" title="Water Glass">Water Glass</a></h3>
-              <p>Chrome extension to track and remind yourself to drink water.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://sonnyt.com/Tweetie/" title="Tweetie">Tweetie</a></h3>
-              <p>jQuery Twitter feed plugin with templating.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://sonnyt.com/prettySocial/" title="downCount">prettySocial.js</a></h3>
-              <p>Custom share buttons for Pinterest, Twitter, Facebook and Google Plus.</p>
-            </article>
-            <article class="col-md-6">
-              <h3><a target="_blank" href="http://sonnyt.com/downCount/" title="downCount">downCount.js</a></h3>
-              <p>jQuery countdown plugin that accounts for timezone.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container section blog-list">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <hr />
-      <div class="row content">
-        <div class="col-md-3">
-          <h2>Blog</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-
-            {% for post in site.posts limit: 6 %}
-              <article class="col-md-12">
-                <h3>
-                  <a href="{{post.url}}" title="{{post.title}}">
-                    {{post.title}}
-                    <small class="pull-right hidden-xs">{{post.date | date: "%B %-d, %Y"}}</small>
-                  </a>
-                </h3>
-              </article>
-            {% endfor %}
-
-            <div class="col-xs-12 text-right">
-              <a href="/blog">View Archives <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="container section">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <hr />
-      <div class="row content">
-        <div class="col-md-3">
-          <h2>Connect</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <article class="col-xs-6 col-md-4">
-              Twitter
-              <h3>
-                <a href="http://twitter.com/{{ site.contact.twitter }}" target="_blank" title="@{{ site.contact.twitter }}">@{{ site.contact.twitter }}</a>
-              </h3>
-            </article>
-            <article class="col-xs-6 col-md-4">
-              Github
-              <h3>
-                <a href="http://github.com/{{ site.contact.github }}" target="_blank" title="@{{ site.contact.github }}">@{{ site.contact.github }}</a>
-              </h3>
-            </article>
-            <article class="col-xs-6 col-md-4">
-              Email
-              <h3>
-                <a href="mailto:{{ site.contact.email }}" target="_blank" title="{{ site.contact.email }}">{{ site.contact.email }}</a>
-              </h3>
-            </article>
-            <article class="col-xs-6 col-md-4">
-              ThemeForest
-              <h3>
-                <a href="http://themeforest.net/user/{{ site.contact.themeforest }}" target="_blank" title="@{{ site.contact.themeforest }}">@{{ site.contact.themeforest }}</a>
-              </h3>
-            </article>
-            <article class="col-xs-6 col-md-4">
-              Instagram
-              <h3>
-                <a href="http://instagram.com/{{ site.contact.instagram }}" target="_blank" title="@{{ site.contact.instagram }}">@{{ site.contact.instagram }}</a>
-              </h3>
-            </article>
-            <article class="col-xs-12 col-md-4">
-              LinkedIn
-              <h3>
-                <a href="http://linkedin.com/{{ site.contact.linkedin }}" target="_blank" title="/{{ site.contact.linkedin }}">/{{ site.contact.linkedin }}</a>
-              </h3>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<main>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+  
+  <section>
+    {% for project in site.data.projects  %}
+      <article>
+        <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+        <p>{{ project.description }}</p>
+      </article>
+    {% endfor %}
+  </section>
+</main>

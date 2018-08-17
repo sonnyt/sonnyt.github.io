@@ -1,0 +1,32 @@
+-
+  name: Ugly Email
+  url: http://uglyemail.com
+  description: Gmail extension to check if your email is being tracked.
+-
+  name: StyleGreed
+  url: http://www.stylegreed.com
+  description: Find, like, and buy all of your fashion and beauty needs in a single swipe.
+-
+  name: ThemeWizz
+  url: http://themewizz.com
+  description: Beautiful Wordpress/HTML theme and plugin market.
+-
+  name: LAYATea
+  url: http://www.layatea.com
+  description: A  recipe manager app centered around healthy drinks.
+-
+  name: Water Glass
+  url: http://waterglass.oneclicklab.com
+  description: Chrome extension to track and remind yourself to drink water.
+-
+  name: Tweetie
+  url: http://sonnyt.com/Tweetie/
+  description: jQuery Twitter feed plugin with templating.
+-
+  name: prettySocial.js
+  url: http://sonnyt.com/prettySocial/
+  description: Custom share buttons for Pinterest, Twitter, Facebook and Google Plus.
+-
+  name: downCount.js
+  url: http://sonnyt.com/downCount/
+  description: jQuery countdown plugin that accounts for timezone.

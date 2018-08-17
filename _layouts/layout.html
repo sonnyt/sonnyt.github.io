@@ -2,27 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% if page.title %} {{ page.title }} | {% endif %} Sonny T.</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/libs/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/libs/pygments.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css?bust={{ site.time | date: '%s' }}" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic|Merriweather:100,400,300,700,900" rel="stylesheet" type="text/css" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
-
+  <title>{{ site.title | strip_html }}</title>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css?bust={{ site.time | date: '%s' }}" />
   <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-  {% else %}
-    <meta name="description" content="New York based web developer Sonny T." />
-  {% endif; %}
-
-  {% if page.tags %}
-    <meta name="keyword" content="{{ page.tags || join:',' }}" />
-  {% endif; %}
+  <meta name="description" content="{{ site.description | strip_html }}" />
 </head>
-<body class="{{ layout.class }} {{ page.class }}">
+<body class="{{ layout.class }}">
   {{ content }}
 
   <script>
@@ -31,7 +16,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-21599784-2', 'auto');
+    ga('create', '{{site.analytics}}', 'auto');
     ga('send', 'pageview');
 
   </script>

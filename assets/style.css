@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+:root {
+  --font-header: 'Open Sans', sans-serif;
+  --font-body: 'Inconsolata', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #222;
+  font-size: 1.6rem;
+  line-height: 1.75em;
+  font-family: var(--font-body);
+}
+
+a {
+  color: #222;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 320px;
+  float: left;
+  top: 33%;
+}
+
+header h1 {
+  font-family: var(--font-header);
+  font-size: 5rem;
+}
+
+section {
+  left: 400px;
+  position: relative;
+  width: 67%;
+  margin: 1.5rem 0;
+}
+
+article {
+  margin: 2rem 0;
+}
+
+article h3 {
+  font-family: var(--font-header);
+  margin: 0 0 .5rem 0;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article a:before {
+  content: " ";
+  width: 5px;
+  height: 2px;
+  display: inline-block;
+  background: #222;
+  bottom: .5rem;
+  position: relative;
+  margin-right: .75rem;
+}
+
+article a:hover:before {
+  width: 15px;
+}
+
+article p {
+  margin: 0;
+  padding: 0;
+}

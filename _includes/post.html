@@ -1,7 +1,0 @@
-<article class="post" id="post-{{post.id | slugify}}">
-  <span class="date">{{post.date | date: "%B %-d, %Y"}}</span>
-  <h3 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-  <div class="content format">
-    {{ post.content | split:'<!--break-->' | first }}
-  </div>
-</article>
