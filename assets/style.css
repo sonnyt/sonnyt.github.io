@@ -13,6 +13,11 @@
   background: var(--color-primary);
 }
 
+::-moz-selection {
+  color: var(--color-base);
+  background: var(--color-primary);
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -68,6 +73,7 @@ h1, h3, h2 {
 }
 
 header .container {
+  position: -webkit-sticky;
   position: sticky;
   top: 33%;
 }
